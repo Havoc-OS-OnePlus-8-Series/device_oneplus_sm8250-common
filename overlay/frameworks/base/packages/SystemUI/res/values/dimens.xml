@@ -39,4 +39,8 @@
 
     <!-- How much into a DisplayCutout's bounds we can go, on each side -->
     <dimen name="display_cutout_margin_consumption">68px</dimen>
+
+    <!-- The maximum offset in either direction that elements are moved horizontally to prevent
+         burn-in on AOD. -->
+    <dimen name="burn_in_prevention_offset_x">0dp</dimen>
 </resources>
