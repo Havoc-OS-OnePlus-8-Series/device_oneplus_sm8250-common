@@ -1,0 +1,7 @@
+package vendor.oneplus.camera.CameraMDMHIDL@1.0;
+
+interface IOnePlusCameraMDM {
+    getJankMsg() generates (string a);
+    setJankMsg(string a, uint32_t b, uint32_t c);
+    setCameraId(uint32_t a, uint32_t b, uint32_t c);
+};
