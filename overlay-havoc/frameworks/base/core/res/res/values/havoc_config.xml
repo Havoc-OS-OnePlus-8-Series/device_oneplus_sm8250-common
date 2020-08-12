@@ -42,6 +42,9 @@
      <!-- If true, the display will be shifted around in ambient mode. -->
     <bool name="config_enableBurnInProtection">true</bool>
 
+    <!-- Flag indicating whether we should enable the adaptive sleep.-->
+    <bool name="config_adaptive_sleep_available">true</bool>
+
     <!-- Do the battery/notification LEDs support pulsing?
          Used to decide if we show pulse settings -->
     <bool name="config_ledCanPulse">false</bool>
