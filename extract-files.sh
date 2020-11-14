@@ -66,6 +66,9 @@ function blob_fixup() {
         vendor/lib64/libgf_ud_hal.so|vendor/lib64/libgf_g6_ud_hal.so)
             sed -i "s|vendor.boot.verifiedbootstate|vendor.boot.fingerprintbstate|g" "${2}"
             ;;
+        system/etc/nfcee_access.xml)
+            sed -i -e "s|xliff=\"urn:oasis:names:tc:xliff:document:1.2|android=\"http:\/\/schemas.android.com\/apk\/res\/android|" "${2}"
+            ;;
     esac
 }
 
