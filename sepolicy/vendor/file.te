@@ -12,6 +12,7 @@ type proc_watermark_boost_factor, fs_type, proc_type;
 type procfs_oem_wireless, fs_type, proc_type;
 
 # sysfs
+type sysfs_color, fs_type, sysfs_type;
 type sysfs_dash_charger, fs_type, proc_type, sysfs_type;
 type sysfs_dbg, fs_type, sysfs_type;
 type sysfs_fod, fs_type, sysfs_type;
