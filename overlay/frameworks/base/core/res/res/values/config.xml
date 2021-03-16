@@ -366,14 +366,7 @@
          appearance of the cutout as much as possible, and may be smaller than
          config_mainBuiltInDisplayCutout
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">
-        M 0,0
-        H 164
-        V 102.5
-        H 0
-        Z
-        @left
-    </string>
+    <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">M 0.0, 0.0 h 156 v 104 h -156 Z @left</string>
 
     <!-- Whether the display cutout region of the main built-in display should be forced to
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
