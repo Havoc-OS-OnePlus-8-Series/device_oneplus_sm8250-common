@@ -287,6 +287,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
 
+# Default Sounds
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.ringtone=Ganymede.ogg \
+    ro.config.notification_sound=End_note.ogg \
+    ro.config.alarm_alert=Argon.ogg
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
