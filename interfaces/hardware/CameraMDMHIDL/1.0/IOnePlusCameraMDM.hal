@@ -1,4 +1,4 @@
-package vendor.oneplus.camera.CameraMDMHIDL@1.0;
+package vendor.oneplus.hardware.CameraMDMHIDL@1.0;
 
 interface IOnePlusCameraMDM {
     getJankMsg() generates (string a);
