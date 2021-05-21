@@ -1,0 +1,1 @@
+allow iorap_prefetcherd havoc_data_file:file { read open };
