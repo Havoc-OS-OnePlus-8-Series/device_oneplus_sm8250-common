@@ -16,6 +16,6 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           android:sharedUserId="android.uid.system"
-          package="org.lineageos.settings.device">
+          package="org.havoc.device.DeviceSettings">
     <uses-permission android:name="android.permission.VIBRATE" />
 </manifest>
