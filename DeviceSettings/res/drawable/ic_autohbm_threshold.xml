@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 Havoc-OS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="256.000000dp"
+    android:height="256.000000dp"
+    android:tint="?android:attr/colorControlNormal"
+    android:viewportWidth="256.000000"
+    android:viewportHeight="256.000000">
+
+    <group
+            android:translateY="256.000000"
+            android:scaleX="0.100000"
+            android:scaleY="-0.100000">
+        <path
+            android:fillColor="#000"
+            android:strokeWidth="1"
+            android:pathData="M1245 2207 c-3 -7 -4 -60 -3 -117 3 -85 6 -105 21 -114 12 -8 22 -8 35 0 14 10 17
+27 17 125 l0 114 -33 3 c-20 2 -34 -2 -37 -11z" />
+        <path
+            android:fillColor="#000"
+            android:strokeWidth="1"
+            android:pathData="M797 2022 c-10 -10 -17 -23 -17 -29 0 -19 144 -163 162 -163 21 0 48 27 48 47 0 21
+-141 163 -162 163 -8 0 -22 -8 -31 -18z" />
+        <path
+            android:fillColor="#000"
+            android:strokeWidth="1"
+            android:pathData="M1643 1967 c-40 -41 -73 -81 -73 -90 0 -20 27 -47 47 -47 19 0 150 126 159 152 7
+22 -21 58 -44 58 -9 0 -48 -33 -89 -73z" />
+        <path
+            android:fillColor="#000"
+            android:strokeWidth="1"
+            android:pathData="M1185 1823 c-209 -75 -272 -336 -118 -490 62 -62 124 -87 213 -88 89 0 150 25 213
+88 58 58 82 117 82 207 0 91 -24 149 -85 210 -80 80 -203 109 -305 73z" />
+        <path
+            android:fillColor="#000"
+            android:strokeWidth="1"
+            android:pathData="M604 1566 c-3 -8 -4 -25 -2 -38 3 -23 5 -23 117 -23 98 0 115 3 125 18 8 12 8 22 0
+35 -9 14 -29 17 -123 20 -90 2 -112 0 -117 -12z" />
+        <path
+            android:fillColor="#000"
+            android:strokeWidth="1"
+            android:pathData="M1722 1568 c-6 -6 -12 -20 -12 -29 0 -33 25 -40 136 -37 l109 3 0 35 0 35 -110 3
+c-77 2 -114 -1 -123 -10z" />
+        <path
+            android:fillColor="#000"
+            android:strokeWidth="1"
+            android:pathData="M859 1184 c-80 -78 -90 -98 -60 -127 18 -19 23 -19 46 -7 35 19 145 135 145 153 0
+20 -27 47 -47 47 -8 0 -46 -30 -84 -66z" />
+        <path
+            android:fillColor="#000"
+            android:strokeWidth="1"
+            android:pathData="M1586 1234 c-9 -8 -16 -22 -16 -31 0 -18 110 -134 145 -153 23 -12 28 -12 46 7 30
+29 20 49 -60 127 -72 69 -89 76 -115 50z" />
+        <path
+            android:fillColor="#000"
+            android:strokeWidth="1"
+            android:pathData="M1251 1096 c-8 -9 -11 -51 -9 -122 l3 -109 35 0 35 0 3 109 c3 112 -4 136 -38 136
+-10 0 -23 -6 -29 -14z" />
+       <path
+            android:fillColor="#000"
+            android:strokeWidth="1"
+            android:pathData="M577 696 c-197 -73 -146 -359 63 -358 56 1 93 18 131 59 40 42 49 66 49 125 0 127
+-127 217 -243 174z" />
+        <path
+            android:fillColor="#000"
+            android:strokeWidth="1"
+            android:pathData="M220 540 c-8 -14 -8 -26 0 -40 9 -17 21 -20 80 -20 l70 0 0 40 0 40 -70 0 c-59 0
+-71 -3 -80 -20z" />
+        <path
+            android:fillColor="#000"
+            android:strokeWidth="1"
+            android:pathData="M910 520 l0 -40 710 0 c699 0 709 0 720 20 8 14 8 26 0 40 -11 20 -21 20 -720 20
+l-710 0 0 -40z" />
+    </group>
+</vector>
