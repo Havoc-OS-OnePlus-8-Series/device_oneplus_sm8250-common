@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014-2017 The OmniROM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Device Settings -->
+    <string name="device_title">一加设置</string>
+    <string name="device_summary">调整一加特定设备设置</string>
+    <!-- Alert Slider -->
+    <string name="slider_title">三段式开关</string>
+    <string name="mute_media_title">切换到静音模式时，将媒体音量设为静音</string>
+    <string name="mute_media_summary">该开关仅在声音外放时生效</string>
+    <!-- Display Modes -->
+    <string name="display_title">显示</string>
+    <string name="hbm_mode_summary">立即将屏幕设置为最大亮度</string>
+    <string name="hbm_mode_title">高亮度模式</string>
+    <string name="auto_hbm_summary">根据光线强度自动打开高亮度模式</string>
+    <string name="auto_hbm_title">自动高亮度模式</string>
+    <string name="auto_hbm_threshold_title">自动高亮度模式阈值 (lux)</string>
+    <string name="auto_hbm_threshold_summary">调节模式开启时的最大亮度</string>
+    <string name="tile_hbm_mode">高亮度模式</string>
+    <string name="dc_mode_summary">通过改变电路功率来调节屏幕背光</string>
+    <string name="dc_mode_title">防闪烁模式（DC-调光）</string>
+    <!-- Dolby -->
+    <string name="dolby_category">音频</string>
+    <string name="enable_dolby_title">杜比全景声</string>
+    <string name="enable_dolby_summary">开关杜比需要重启生效</string>
+    <string name="dolby_title">配置</string>
+    <string name="dolby_summary">根据播放的媒体内容调整音频输出</string>
+    <!-- Doze -->
+    <string name="doze_panel_title">休眠</string>
+    <string name="ambient_display_gestures_title">环境显示手势</string>
+    <string name="ambient_display_gestures_summary">自定义唤醒屏幕的其他手势</string>
+    <string name="doze_settings_help_title">帮助</string>
+    <string name="doze_settings_help_text">这些功能使用传感器事件启动休眠通知。仅当设备收到通知时才启用所选的传感器，这有助于减少电池使用量。还有一个选项，在屏幕关闭后立即启用选中的传感器，这将导致更高的电池使用率。</string>
+    <string name="dialog_ok">好的</string>
+    <string name="switch_bar_off">关闭</string>
+    <string name="switch_bar_on">开启</string>
+    <string name="ambient_display_title">主动显示</string>
+    <string name="ambient_display_always_on_title">始终显示</string>
+    <string name="ambient_display_always_on_summary">显示时间、通知图标和其他信息。这会增加电池使用量。</string>
+    <string name="pickup_sensor_title">拾取传感器</string>
+    <string name="pick_up_gesture_title">拾取</string>
+    <string name="disabled">禁用</string>
+    <string name="pick_up_gesture_summary">拿起时显示通知</string>
+    <string name="pick_up_wake_gesture_summary">拿起时唤醒设备</string>
+    <string name="proximity_sensor_title">距离传感器</string>
+    <string name="pocket_gesture_title">口袋</string>
+    <string name="pocket_gesture_summary">从口袋中移除时显示通知</string>
+    <!-- FPS Info -->
+    <string name="fps_title">FPS 帧率显示</string>
+    <string name="fps_info_title">FPS 叠加层</string>
+    <string name="fps_info_summary">显示帧率悬浮窗</string>
+    <string name="fps_info_color_title">文本颜色</string>
+    <string name="fps_info_color_green">绿色</string>
+    <string name="fps_info_color_red">红色</string>
+    <string name="fps_info_color_blue">蓝色</string>
+    <string name="fps_info_color_yellow">黄色</string>
+    <string name="fps_info_color_black">黑色</string>
+    <string name="fps_info_color_accent">跟随系统</string>
+    <string name="fps_info_position_title">悬浮窗位置</string>
+    <string name="fps_info_position_top_left">顶端居左</string>
+    <string name="fps_info_position_top_center">顶端居中</string>
+    <string name="fps_info_position_top_right">顶端居右</string>
+    <string name="fps_info_position_bottom_left">底部居左</string>
+    <string name="fps_info_position_bottom_center">底部居中</string>
+    <string name="fps_info_position_bottom_right">底部居右</string>
+    <string name="fps_info_text_size_title">文本大小</string>
+    <!-- Log Tile -->
+    <string name="quick_settings_log_tile_label">抓取log</string>
+    <string name="quick_settings_log_tile_dialog_title">选项</string>
+    <string name="cannot_get_su">操作失败，未能获取root权限！</string>
+    <!-- Network -->
+    <string name="network_title">网络</string>
+    <string name="nr_mode_switcher_title">5G 模式切换</string>
+    <string name="nsa_only">仅 NSA</string>
+    <string name="sa_only">仅 SA</string>
+    <string name="nsa_sa">NSA + SA</string>
+    <string name="nr_mode_switcher_warning">重启/切换数据卡后请重新设置</string>
+    <string name="service_not_ready">服务未启动，请重试</string>
+    <string name="unavailable_sim_slot">无法获取当前使用移动数据的卡槽，请重试</string>
+    <!-- Touchpanel -->
+    <string name="touchpanel_title">触摸屏</string>
+    <string name="game_mode_title">游戏模式</string>
+    <string name="game_mode_summary">强制全局使用 240Hz 触控采样率</string>
+    <string name="game_mode_warning">会增加电池用量</string>
+    <!-- Unsupported feature -->
+    <string name="unsupported_feature">当前内核不支持该功能</string>
+    <!-- Vibration Slider -->
+    <string name="category_vibrator">振动</string>
+    <string name="vib_strength_title_head">强度</string>
+    <string name="vib_strength_summary_head">自定义振动强度</string>
+</resources>
