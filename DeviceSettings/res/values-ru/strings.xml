@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014-2017 The OmniROM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Device Settings -->
+    <string name="device_title">Настройки OnePlus</string>
+    <string name="device_summary">Изменение настроек устройства OnePlus</string>
+    <!-- Alert Slider -->
+    <string name="slider_title">Ползунок управления звуком</string>
+    <string name="mute_media_title">Отключить громкость мультимедиа в беззвучном режиме</string>
+    <string name="mute_media_summary">Это будет действовать только для динамика</string>
+    <!-- Display Modes -->
+    <string name="display_title">Режимы отображения</string>
+    <string name="hbm_mode_summary">Мгновенно включает максимальную яркость дисплея</string>
+    <string name="hbm_mode_title">Высокая яркость</string>
+    <string name="auto_hbm_summary">Включить максимальную яркость на основе солнечного света</string>
+    <string name="auto_hbm_title">Автоматическая высокая яркость</string>
+    <string name="auto_hbm_threshold_title">Автоматический порог высокой яркости (lux)</string>
+    <string name="auto_hbm_threshold_summary">Настройка пиковой яркости дисплея </string>
+    <string name="tile_hbm_mode">Высокая яркость</string>
+    <string name="dc_mode_summary">Затемнение подсветки путем регулирования постоянного тока на дисплее</string>
+    <string name="dc_mode_title">Автоматический DC Dimming</string>
+    <!-- Dolby -->
+    <string name="dolby_category">Dolby</string>
+    <string name="enable_dolby_title">Dolby Atmos</string>
+    <string name="enable_dolby_summary">Для переключения требуется перезагрузка.</string>
+    <string name="dolby_title">Конфигурация</string>
+    <string name="dolby_summary">Настроить аудиовыход на основе медиаконтента</string>
+    <!-- Doze -->
+    <string name="doze_panel_title">Doze</string>
+    <string name="ambient_display_gestures_title">Жесты активного дисплея</string>
+    <string name="ambient_display_gestures_summary">Дополнительные жесты для включения экрана</string>
+    <string name="doze_settings_help_title">Справка</string>
+    <string name="doze_settings_help_text">Эти функции используют сенсоры для запуска пульсации уведомлений. Выбранный датчик включён только тогда, когда устройство получает уведомление, это помогает уменьшить потребление аккумулятора. Существует также опция включения датчика, как только экран выключится, это приведет к большему потреблению заряда аккумулятора.</string>
+    <string name="dialog_ok">ОК</string>
+    <string name="switch_bar_off">Откл</string>
+    <string name="switch_bar_on">Вкл</string>
+    <string name="ambient_display_title">Активный дисплей</string>
+    <string name="ambient_display_always_on_title">Всегда включен</string>
+    <string name="ambient_display_always_on_summary">Показывать время, иконки уведомлений и другую информацию. Увеличено использование заряда батареи.</string>
+    <string name="pickup_sensor_title">Датчик поднятия устройства</string>
+    <string name="pick_up_gesture_title">Поднять</string>
+    <string name="disabled">Отключено</string>
+    <string name="pick_up_gesture_summary">Уведомления при поднятии экрана</string>
+    <string name="pick_up_wake_gesture_summary">Пробуждать устройство при поднятии</string>
+    <string name="proximity_sensor_title">Датчик приближения</string>
+    <string name="pocket_gesture_title">Карманный</string>
+    <string name="pocket_gesture_summary">Пульсирующие уведомления при извлечении из кармана</string>
+    <!-- FPS Info -->
+    <string name="fps_title">Информация о FPS</string>
+    <string name="fps_info_title">Наложение FPS</string>
+    <string name="fps_info_summary">Показать наложение с текущими кадрами в секунду</string>
+    <string name="fps_info_color_title">Цвет текста</string>
+    <string name="fps_info_color_green">Зеленый</string>
+    <string name="fps_info_color_red">красный</string>
+    <string name="fps_info_color_blue">Синий</string>
+    <string name="fps_info_color_yellow">Желтый</string>
+    <string name="fps_info_color_black">Чернить</string>
+    <string name="fps_info_color_accent">Follow System</string>
+    <string name="fps_info_position_title">Положение наложения</string>
+    <string name="fps_info_position_top_left">Top left</string>
+    <string name="fps_info_position_top_center">Top center</string>
+    <string name="fps_info_position_top_right">Top right</string>
+    <string name="fps_info_position_bottom_left">Bottom left</string>
+    <string name="fps_info_position_bottom_center">Bottom center</string>
+    <string name="fps_info_position_bottom_right">Bottom right</string>
+    <string name="fps_info_text_size_title">Размер текста</string>
+    <!-- Log Tile -->
+    <string name="quick_settings_log_tile_label">LogTile</string>
+    <string name="quick_settings_log_tile_dialog_title">Настройки</string>
+    <string name="cannot_get_su">Не удалось выполнить из-за отсутствия прав суперпользователя (root)</string>
+    <!-- Touchpanel -->
+    <string name="touchpanel_title">Touchpanel</string>
+    <string name="game_mode_title">Игровой режим</string>
+    <string name="game_mode_summary">Увеличьте частоту дискретизации сенсорного экрана для всех приложений</string>
+    <string name="game_mode_warning">Увеличивает потребление энергии</string>
+    <!-- Unsupported feature -->
+    <string name="unsupported_feature">Эта функция недоступна в текущем ядре</string>
+    <!-- Vibration Strength -->
+    <string name="category_vibrator">Вибрация</string>
+    <string name="vib_strength_title_head">Сила</string>
+    <string name="vib_strength_summary_head">Определите силу вибрации</string>
+</resources>

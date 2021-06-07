@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014-2017 The OmniROM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Device Settings -->
+    <string name="device_title">Impostazioni OnePlus</string>
+    <string name="device_summary">Regola le impostazioni specifiche del dispositivo OnePlus</string>
+    <!-- Alert Slider -->
+    <string name="slider_title">Cursore Avviso</string>
+    <string name="mute_media_title">Silenzia il volume multimediale in modalità silenziosa</string>
+    <string name="mute_media_summary">Questo avrà effetto solo per gli altoparlanti</string>
+    <!-- Display Modes -->
+    <string name="display_title">Modalità Display</string>
+    <string name="hbm_mode_summary">Attiva immediatamente la luminanza massima del display</string>
+    <string name="hbm_mode_title">Alta luminosità</string>
+    <string name="auto_hbm_summary">Abilita il picco luminanza basata sulla luce solare</string>
+    <string name="auto_hbm_title">Alta luminosità automatica</string>
+    <string name="auto_hbm_threshold_title">Soglia alta luminosità automatica (lux)</string>
+    <string name="auto_hbm_threshold_summary">Regola il picco della luminanza del display </string>
+    <string name="tile_hbm_mode">Alta luminosità</string>
+    <string name="dc_mode_summary">Diminuisci la retroilluminazione regolando la corrente CC disegnata sul display</string>
+    <string name="dc_mode_title">DC Dimming automatico</string>
+    <!-- Dolby -->
+    <string name="dolby_category">Dolby</string>
+    <string name="enable_dolby_title">Dolby Atmos</string>
+    <string name="enable_dolby_summary">Switching requires a reboot to take effect</string>
+    <string name="dolby_title">Configurazione</string>
+    <string name="dolby_summary">Configura l\'uscita audio in base al contenuto multimediale</string>
+    <!-- Doze -->
+    <string name="doze_panel_title">Doze</string>
+    <string name="ambient_display_gestures_title">Gesti Ambient Display</string>
+    <string name="ambient_display_gestures_summary">Gesti aggiuntivi per svegliare lo schermo</string>
+    <string name="doze_settings_help_title">Aiuto</string>
+    <string name="doze_settings_help_text">Queste funzionalità utilizzano gli eventi del sensore per lanciare un impulso di notifica doze. Il sensore scelto è abilitato solo quando il dispositivo riceve una notifica, questo aiuta a ridurre l\'utilizzo della batteria. C\'è anche un\'opzione per abilitare il sensore scelto non appena lo schermo si spegne, questo causerà un maggiore utilizzo della batteria.</string>
+    <string name="dialog_ok">OK</string>
+    <string name="switch_bar_off">Off</string>
+    <string name="switch_bar_on">On</string>
+    <string name="ambient_display_title">Display Ambient</string>
+    <string name="ambient_display_always_on_title">Sempre attivo</string>
+    <string name="ambient_display_always_on_summary">Mostra tempo, icone di notifica e altre informazioni. Aumenterà l\' utilizzo della batteria.</string>
+    <string name="pickup_sensor_title">Sensore di sollevamento</string>
+    <string name="pick_up_gesture_title">Pick-up</string>
+    <string name="disabled">Disattivato</string>
+    <string name="pick_up_gesture_summary">Notifiche lampeggianti al sollevamento</string>
+    <string name="pick_up_wake_gesture_summary">Risveglia dispositivo al sollevamento</string>
+    <string name="proximity_sensor_title">Sensore di prossimità</string>
+    <string name="pocket_gesture_title">Tasca</string>
+    <string name="pocket_gesture_summary">Notifiche lampeggianti alla rimozione dalla tasca</string>
+    <!-- FPS Info -->
+    <string name="fps_title">Info FPS</string>
+    <string name="fps_info_title">FPS overlay</string>
+    <string name="fps_info_summary">Mostra sovrapposizione con fotogrammi al secondo correnti</string>
+    <string name="fps_info_color_title">Colore del testo</string>
+    <string name="fps_info_color_green">Verde</string>
+    <string name="fps_info_color_red">Rosso</string>
+    <string name="fps_info_color_blue">Blu</string>
+    <string name="fps_info_color_yellow">Giallo</string>
+    <string name="fps_info_color_black">Nero</string>
+    <string name="fps_info_color_accent">Segui il sistema</string>
+    <string name="fps_info_position_title">Posizione di sovrapposizione</string>
+    <string name="fps_info_position_top_left">Top left</string>
+    <string name="fps_info_position_top_center">Top center</string>
+    <string name="fps_info_position_top_right">Top right</string>
+    <string name="fps_info_position_bottom_left">Bottom left</string>
+    <string name="fps_info_position_bottom_center">Bottom center</string>
+    <string name="fps_info_position_bottom_right">Bottom right</string>
+    <string name="fps_info_text_size_title">Dimensione del testo</string>
+    <!-- Log Tile -->
+    <string name="quick_settings_log_tile_label">LogTile</string>
+    <string name="quick_settings_log_tile_dialog_title">Opzioni</string>
+    <string name="cannot_get_su">Azione fallita a causa di un accesso superuser(root) mancante</string>
+    <!-- Touchpanel -->
+    <string name="touchpanel_title">Pannello touch</string>
+    <string name="game_mode_title">Modalità di gioco</string>
+    <string name="game_mode_summary">Aumenta la frequenza di campionamento del tocco per tutte le applicazioni</string>
+    <string name="game_mode_warning">Increases power consumption</string>
+    <!-- Unsupported feature -->
+    <string name="unsupported_feature">Questa funzione non è disponibile nel kernel corrente</string>
+    <!-- Vibration Strength -->
+    <string name="category_vibrator">Vibrazione</string>
+    <string name="vib_strength_title_head">Intensità</string>
+    <string name="vib_strength_summary_head">Definisci l\'intensità della vibrazione</string>
+</resources>
