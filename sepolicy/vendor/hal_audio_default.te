@@ -1,2 +1,5 @@
 allow hal_audio_default vendor_diag_device:chr_file { read write open };
 dontaudit  hal_audio_default vendor_db_security_prop:file { read open getattr ioctl map };
+
+allow hal_audio_default hal_dms_hwservice:hwservice_manager find;
+binder_call(hal_audio_default, hal_dms_default)
