@@ -1,0 +1,5 @@
+on boot
+    mkdir /data/misc/havoc/ 0770 cameraserver audio
+    write /data/misc/havoc/client_package_name 0
+    chown cameraserver audio /data/misc/havoc/client_package_name
+    chmod 0644 /data/misc/havoc/client_package_name
