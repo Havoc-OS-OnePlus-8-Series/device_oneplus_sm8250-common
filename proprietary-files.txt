@@ -289,7 +289,7 @@ vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
 # Dolby - OP8 from OOS10
--system/priv-app/DaxUI/DaxUI.apk|6e9c532492d4371d0ddc203abdf858a5c7991091
+-system/priv-app/DaxUI/DaxUI.apk|905916f2624e3c4dbed1e86256b7edca0ae5eb9a
 -system/priv-app/daxService/daxService.apk
 system/etc/permissions/privapp-com.dolby.daxappui.xml
 system/etc/permissions/privapp-com.dolby.daxservice.xml
