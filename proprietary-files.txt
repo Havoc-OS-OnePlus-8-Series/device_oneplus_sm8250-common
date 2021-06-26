@@ -104,6 +104,7 @@ system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 # Camera
 vendor/etc/init/vendor.oneplus.hardware.camera@1.0-service.rc
 vendor/etc/init/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service.rc
+vendor/etc/init/vl53l1.rc
 
 # CDSP
 vendor/bin/cdsprpcd
