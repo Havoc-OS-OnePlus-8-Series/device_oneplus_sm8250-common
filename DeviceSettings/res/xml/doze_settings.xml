@@ -17,7 +17,7 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <SwitchPreference
+    <com.havoc.support.preferences.SwitchPreference
         android:key="always_on_display"
         android:disableDependentsState="true"
         android:icon="@drawable/ic_eye"
@@ -43,7 +43,7 @@
         android:key="proximity_sensor"
         android:title="@string/proximity_sensor_title">
 
-        <SwitchPreference
+        <com.havoc.support.preferences.SwitchPreference
             android:key="gesture_pocket"
             android:defaultValue="false"
             android:icon="@drawable/ic_pocket"

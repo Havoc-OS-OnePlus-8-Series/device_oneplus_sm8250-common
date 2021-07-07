@@ -30,14 +30,14 @@
                     android:action="android.settings.DC_DIMMING_SETTINGS" /> 
      </Preference>
 
-        <SwitchPreference
+        <com.havoc.support.preferences.SwitchPreference
             android:key="hbm"
             android:icon="@drawable/ic_hbm_mode"
             android:summary="@string/hbm_mode_summary"
             android:title="@string/hbm_mode_title"
             android:defaultValue="false" />
 
-        <SwitchPreference
+        <com.havoc.support.preferences.SwitchPreference
             android:key="auto_hbm"
             android:icon="@drawable/ic_autohbm_mode"
             android:summary="@string/auto_hbm_summary"
@@ -89,7 +89,7 @@
         android:key="fps"
         android:title="@string/fps_title">
 		
-        <SwitchPreference
+        <com.havoc.support.preferences.SwitchPreference
             android:key="fps_info"
             android:icon="@drawable/ic_fps_overlay"
             android:title="@string/fps_info_title"
