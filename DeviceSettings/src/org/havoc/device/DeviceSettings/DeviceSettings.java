@@ -27,6 +27,7 @@ import android.content.res.Resources;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.MenuItem;
@@ -60,16 +61,21 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_AUTO_HBM_THRESHOLD = "auto_hbm_threshold";
     public static final String KEY_FPS_INFO = "fps_info";
     public static final String KEY_VIBSTRENGTH = "vib_strength";
-    public static final String KEY_SETTINGS_PREFIX = "device_setting_";
 
     private static final String PREF_DOZE = "advanced_doze_settings";
+
+    private static final String FILE_LEVEL = "/sys/devices/platform/soc/a8c000.i2c/i2c-3/3-005a/leds/vibrator/level";
+    private static final long testVibrationPattern[] = {0,50};
+    public static final String DEFAULT = "3";
 
     private Preference mDozeSettings;
     private static SwitchPreference mFpsInfo;
     private static TwoStatePreference mHBMModeSwitch;
     private static TwoStatePreference mAutoHBMSwitch;
 
-    private VibratorStrengthPreference mVibratorStrength;
+    private ProperSeekBarPreference mVibratorStrengthPreference;
+
+    private Vibrator mVibrator;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -85,11 +91,6 @@ public class DeviceSettings extends PreferenceFragment
         win.setNavigationBarDividerColor(res.getColor(R.color.primary_color));
 
         getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
-
-        mVibratorStrength = (VibratorStrengthPreference) findPreference(KEY_VIBSTRENGTH);
-        if (mVibratorStrength == null || !VibratorStrengthPreference.isSupported()) {
-            getPreferenceScreen().removePreference((Preference) findPreference("vibrator"));
-        }
 
         mHBMModeSwitch = (TwoStatePreference) findPreference(KEY_HBM_SWITCH);
         mHBMModeSwitch.setEnabled(HBMModeSwitch.isSupported());
@@ -110,6 +111,18 @@ public class DeviceSettings extends PreferenceFragment
         mFpsInfo = (SwitchPreference) findPreference(KEY_FPS_INFO);
         mFpsInfo.setChecked(isFPSOverlayRunning());
         mFpsInfo.setOnPreferenceChangeListener(this);
+
+        mVibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+
+        mVibratorStrengthPreference =  (ProperSeekBarPreference) findPreference(KEY_VIBSTRENGTH);
+        if (Utils.fileWritable(FILE_LEVEL)) {
+            mVibratorStrengthPreference.setValue(sharedPrefs.getInt(KEY_VIBSTRENGTH,
+                Integer.parseInt(Utils.getFileValue(FILE_LEVEL, DEFAULT))));
+            mVibratorStrengthPreference.setOnPreferenceChangeListener(this);
+        } else {
+            mVibratorStrengthPreference.setEnabled(false);
+        }
     }
 
     @Override
@@ -145,6 +158,12 @@ public class DeviceSettings extends PreferenceFragment
             } else {
                 this.getContext().stopService(hbmIntent);
             }
+        } else if (preference == mVibratorStrengthPreference) {
+    	    int value = Integer.parseInt(newValue.toString());
+            SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+            sharedPrefs.edit().putInt(KEY_VIBSTRENGTH, value).commit();
+            Utils.writeValue(FILE_LEVEL, String.valueOf(value));
+            mVibrator.vibrate(testVibrationPattern, -1);
         }
         return true;
     }
@@ -155,6 +174,15 @@ public class DeviceSettings extends PreferenceFragment
 
     public static boolean isAUTOHBMEnabled(Context context) {
         return PreferenceManager.getDefaultSharedPreferences(context).getBoolean(DeviceSettings.KEY_AUTO_HBM_SWITCH, false);
+    }
+
+    public static void restoreVibStrengthSetting(Context context) {
+        if (Utils.fileWritable(FILE_LEVEL)) {
+            SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+            int value = sharedPrefs.getInt(KEY_VIBSTRENGTH,
+                Integer.parseInt(Utils.getFileValue(FILE_LEVEL, DEFAULT)));
+            Utils.writeValue(FILE_LEVEL, String.valueOf(value));
+        }
     }
 
     @Override

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="ProperSeekBarPreference">
+        <attr name="defaultValueText" format="string" />
         <attr name="interval" format="integer" />
         <attr name="showSign" format="boolean" />
         <attr name="units" format="string|reference" />
