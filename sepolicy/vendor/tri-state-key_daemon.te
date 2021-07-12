@@ -11,3 +11,5 @@ allow tri-state-key_daemon sysfs_tri_state_key:file w_file_perms;
 allow tri-state-key_daemon mnt_vendor_file:dir search;
 
 r_dir_file(tri-state-key_daemon, oem_file)
+
+allow tri-state-key_daemon mnt_vendor_file:file { read open getattr };

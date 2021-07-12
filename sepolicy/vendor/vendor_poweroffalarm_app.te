@@ -1,0 +1,2 @@
+allow vendor_poweroffalarm_app system_app_data_file:dir { search getattr };
+allow vendor_poweroffalarm_app mnt_vendor_file:dir { search getattr };

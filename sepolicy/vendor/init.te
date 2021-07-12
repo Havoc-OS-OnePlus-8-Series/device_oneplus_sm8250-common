@@ -1,1 +1,3 @@
 allow init adsprpcd_file:file mounton;
+allow init debugfs_tracing_debug:dir mounton;
+allow init op2_file:dir mounton;
