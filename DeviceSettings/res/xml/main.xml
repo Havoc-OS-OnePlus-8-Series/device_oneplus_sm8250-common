@@ -17,6 +17,18 @@
 	xmlns:settings="http://schemas.android.com/apk/res/org.havoc.device.DeviceSettings">
 
     <PreferenceCategory
+        android:key="slider"
+        android:title="@string/slider_title">
+
+        <com.havoc.support.preferences.SwitchPreference
+            android:key="mute_media"
+            android:icon="@drawable/ic_audio_media"
+            android:title="@string/mute_media_title"
+            android:summary="@string/mute_media_summary"
+            android:persistent="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="graphics"
         android:title="@string/display_title">
 

@@ -18,6 +18,11 @@
     <string name="device_title">OnePlus Settings</string>
     <string name="device_summary">Adjust OnePlus specific device settings</string>
 
+    <!-- Alert Slider -->
+    <string name="slider_title">Alert Slider</string>
+    <string name="mute_media_title">Mute media volume on silent mode</string>
+    <string name="mute_media_summary">This will only take effect for speaker</string>
+
     <!-- Display Modes -->
     <string name="display_title">Display Modes</string>
     <string name="hbm_mode_summary">Instantly enable the peak luminance of the display</string>

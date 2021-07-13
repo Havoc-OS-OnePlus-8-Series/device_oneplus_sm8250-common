@@ -60,6 +60,7 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_AUTO_HBM_SWITCH = "auto_hbm";
     public static final String KEY_AUTO_HBM_THRESHOLD = "auto_hbm_threshold";
     public static final String KEY_FPS_INFO = "fps_info";
+    public static final String KEY_MUTE_MEDIA = "mute_media";
     public static final String KEY_VIBSTRENGTH = "vib_strength";
 
     private static final String PREF_DOZE = "advanced_doze_settings";
@@ -72,6 +73,7 @@ public class DeviceSettings extends PreferenceFragment
     private static SwitchPreference mFpsInfo;
     private static TwoStatePreference mHBMModeSwitch;
     private static TwoStatePreference mAutoHBMSwitch;
+    private static TwoStatePreference mMuteMedia;
 
     private ProperSeekBarPreference mVibratorStrengthPreference;
 
@@ -111,6 +113,10 @@ public class DeviceSettings extends PreferenceFragment
         mFpsInfo = (SwitchPreference) findPreference(KEY_FPS_INFO);
         mFpsInfo.setChecked(isFPSOverlayRunning());
         mFpsInfo.setOnPreferenceChangeListener(this);
+
+        mMuteMedia = (TwoStatePreference) findPreference(KEY_MUTE_MEDIA);
+        mMuteMedia.setChecked(PreferenceManager.getDefaultSharedPreferences(getContext()).getBoolean(DeviceSettings.KEY_MUTE_MEDIA, false));
+        mMuteMedia.setOnPreferenceChangeListener(this);
 
         mVibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
@@ -158,6 +164,10 @@ public class DeviceSettings extends PreferenceFragment
             } else {
                 this.getContext().stopService(hbmIntent);
             }
+        } else if (preference == mMuteMedia) {
+            Boolean enabled = (Boolean) newValue;
+            VolumeService.setEnabled(getContext(), enabled);
+            VolumeService.changeMediaVolume(getContext());
         } else if (preference == mVibratorStrengthPreference) {
     	    int value = Integer.parseInt(newValue.toString());
             SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
