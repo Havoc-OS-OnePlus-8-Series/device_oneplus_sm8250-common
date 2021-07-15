@@ -50,3 +50,9 @@ vendor.wlan.sniffer.output_dir            u:object_r:vendor_oem_wifi_prop:s0
 vendor.wlan.sniffer.status                u:object_r:vendor_oem_wifi_prop:s0
 vendor.wlan.sniffer.vendor_dir            u:object_r:vendor_oem_wifi_prop:s0
 vendor.wlan.write.con_mode                u:object_r:vendor_set_wlan_prop:s0
+
+# RIL
+ro.ril.supportLTE                         u:object_r:radio_prop:s0
+ro.vendor.ril.svlte1x                     u:object_r:radio_prop:s0
+ro.vendor.ril.svdo                        u:object_r:radio_prop:s0
+vendor.oem.bt.addr                        u:object_r:vendor_radio_prop:s0
