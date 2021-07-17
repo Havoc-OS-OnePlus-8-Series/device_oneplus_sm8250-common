@@ -31,13 +31,6 @@
      </Preference>
 
         <com.havoc.support.preferences.SwitchPreference
-            android:key="hbm"
-            android:icon="@drawable/ic_hbm_mode"
-            android:summary="@string/hbm_mode_summary"
-            android:title="@string/hbm_mode_title"
-            android:defaultValue="false" />
-
-        <com.havoc.support.preferences.SwitchPreference
             android:key="auto_hbm"
             android:icon="@drawable/ic_autohbm_mode"
             android:summary="@string/auto_hbm_summary"
@@ -48,6 +41,13 @@
             android:icon="@drawable/ic_autohbm_threshold"
             android:title="@string/auto_hbm_threshold_title"
             android:summary="@string/auto_hbm_threshold_summary" />
+            
+       <com.havoc.support.preferences.SwitchPreference
+            android:key="hbm"
+            android:icon="@drawable/ic_hbm_mode"
+            android:summary="@string/hbm_mode_summary"
+            android:title="@string/hbm_mode_title"
+            android:defaultValue="false" />
     </PreferenceCategory>
 
     <PreferenceCategory

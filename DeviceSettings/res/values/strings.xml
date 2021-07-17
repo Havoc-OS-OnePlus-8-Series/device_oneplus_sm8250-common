@@ -19,16 +19,16 @@
     <string name="device_summary">Adjust OnePlus specific device settings</string>
 
     <!-- Display Modes -->
-    <string name="display_title">Display</string>
-    <string name="hbm_mode_summary"></string>
-    <string name="hbm_mode_title">High brightness mode</string>
-    <string name="auto_hbm_summary"></string>
-    <string name="auto_hbm_title">Automatic High brightness mode</string>
-    <string name="auto_hbm_threshold_title">Automatic High brightness mode threshold (lux)</string>
-    <string name="auto_hbm_threshold_summary"></string>
-    <string name="tile_hbm_mode">High brightness mode</string>
-    <string name="dc_mode_summary"></string>
-    <string name="dc_mode_title">Automatic DC-Dimming mode</string>
+    <string name="display_title">Display Modes</string>
+    <string name="hbm_mode_summary">Instantly enable the peak luminance of the display</string>
+    <string name="hbm_mode_title">High brightness</string>
+    <string name="auto_hbm_summary">Enable peak luminance based on sunlight</string>
+    <string name="auto_hbm_title">Automatic High brightness</string>
+    <string name="auto_hbm_threshold_title">Automatic High brightness threshold (lux)</string>
+    <string name="auto_hbm_threshold_summary">Adjust peak luminance of the display </string>
+    <string name="tile_hbm_mode">High brightness</string>
+    <string name="dc_mode_summary">Dim backlight by adjusting DC current drawn to the display</string>
+    <string name="dc_mode_title">Automatic DC Dimming</string>
 
     <!-- Doze -->
     <string name="doze_panel_title">Doze</string>
