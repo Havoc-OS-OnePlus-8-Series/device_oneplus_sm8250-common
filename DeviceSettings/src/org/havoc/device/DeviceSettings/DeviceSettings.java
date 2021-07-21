@@ -52,10 +52,13 @@ import androidx.preference.TwoStatePreference;
 import org.havoc.device.DeviceSettings.FileUtils;
 import org.havoc.device.DeviceSettings.doze.DozeSettingsActivity;
 import org.havoc.device.DeviceSettings.FPSInfoService;
+import org.havoc.device.DeviceSettings.kcal.KCalSettingsActivity;
 
 public class DeviceSettings extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
+    public static final String PREF_DEVICE_KCAL = "device_kcal";
+    public static final String CATEGORY_DISPLAY = "display"; 
     public static final String KEY_HBM_SWITCH = "hbm";
     public static final String KEY_AUTO_HBM_SWITCH = "auto_hbm";
     public static final String KEY_AUTO_HBM_THRESHOLD = "auto_hbm_threshold";
@@ -74,6 +77,7 @@ public class DeviceSettings extends PreferenceFragment
     private static TwoStatePreference mHBMModeSwitch;
     private static TwoStatePreference mAutoHBMSwitch;
     private static TwoStatePreference mMuteMedia;
+    private Preference mKcal;
 
     private ProperSeekBarPreference mVibratorStrengthPreference;
 
@@ -117,6 +121,13 @@ public class DeviceSettings extends PreferenceFragment
         mMuteMedia = (TwoStatePreference) findPreference(KEY_MUTE_MEDIA);
         mMuteMedia.setChecked(PreferenceManager.getDefaultSharedPreferences(getContext()).getBoolean(DeviceSettings.KEY_MUTE_MEDIA, false));
         mMuteMedia.setOnPreferenceChangeListener(this);
+
+        mKcal = findPreference(PREF_DEVICE_KCAL);
+        mKcal.setOnPreferenceClickListener(preference -> {
+            Intent intent = new Intent(getActivity().getApplicationContext(), KCalSettingsActivity.class);
+            startActivity(intent);
+            return true;
+        });
 
         mVibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());

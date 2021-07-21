@@ -218,3 +218,6 @@
 
 # Vibrator
 /sys/devices/platform/soc/a8c000.i2c/i2c-3/3-005a/leds/vibrator/level                     u:object_r:sysfs_vibrator:s0
+
+# Kcal
+/sys/module/msm_drm/parameters(/.*)?            u:object_r:sysfs_dm:s0

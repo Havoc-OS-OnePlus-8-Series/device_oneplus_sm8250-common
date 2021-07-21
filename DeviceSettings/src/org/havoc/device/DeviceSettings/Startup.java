@@ -25,6 +25,8 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import androidx.preference.PreferenceManager;
 
+import org.havoc.device.DeviceSettings.kcal.KCalSettings;
+
 public class Startup extends BroadcastReceiver {
 
     @Override
@@ -42,6 +44,7 @@ public class Startup extends BroadcastReceiver {
        }
         org.havoc.device.DeviceSettings.doze.Utils.checkDozeService(context);
         DeviceSettings.restoreVibStrengthSetting(context);
+        KCalSettings.restore(context);
     }
 
     private void restore(String file, boolean enabled) {
