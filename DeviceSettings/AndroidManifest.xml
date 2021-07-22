@@ -162,6 +162,18 @@
             </intent-filter>
         </activity>
 
+        <!-- KCalSettings Tile -->
+        <service
+            android:name="org.havoc.device.DeviceSettings.kcal.KCalTileService"
+            android:icon="@drawable/ic_kcal"
+            android:label="@string/device_kcal_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action
+                    android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+
         <!-- Log Tile -->
         <service
             android:name="org.havoc.device.DeviceSettings.LogTile"
