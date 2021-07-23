@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from OnePlus8TOxygen_15.W.06_OTA_0060_all_2106032250_c00351cd64ef4e86
+# All unpinned blobs below are extracted from OnePlus8TOxygen_15.W.07_OTA_0070_all_2106281218_140a8901cd2adf
 
 # ADSP
 vendor/bin/adsprpcd
@@ -581,7 +581,6 @@ vendor/lib/libsmwrapper.so
 system_ext/lib/libmmosal.so
 system_ext/lib/libmmparser_lite.so
 system_ext/lib64/libmmosal.so
-vendor/etc/seccomp_policy/codec2.vendor.base.policy
 vendor/etc/system_properties.xml
 vendor/lib64/libmmosal.so
 
