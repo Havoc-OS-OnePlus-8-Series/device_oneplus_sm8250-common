@@ -241,6 +241,8 @@
      </EncoderProfile>
      <!-- VENDOR_EDIT add end -->
 
+    <!-- VENDOR_EDIT start -->
+    <!--
     <EncoderProfile quality="qhd" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="29400000"
@@ -266,6 +268,8 @@
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
+    -->
+    <!-- VENDOR_EDIT end -->
 
     <EncoderProfile quality="4kdci" fileFormat="mp4" duration="30">
       <Video codec="h264"
@@ -610,6 +614,8 @@
              channels="2" />
     </EncoderProfile>
 
+    <!-- VENDOR_EDIT start -->
+    <!--
     <EncoderProfile quality="qhd" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="29400000"
@@ -635,6 +641,8 @@
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
+    -->
+    <!-- VENDOR_EDIT end -->
 
     <EncoderProfile quality="4kdci" fileFormat="mp4" duration="30">
       <Video codec="h264"
