@@ -4,7 +4,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
-LOCAL_OVERRIDES_PACKAGES := Camera2 GalleryGoPrebuilt Gallery2 MusicFX NfcNci Photos RecorderPrebuilt SafetyHubPrebuilt SoundAmplifierPrebuilt Snap
+LOCAL_OVERRIDES_PACKAGES := AudioFX Camera2 GalleryGoPrebuilt Gallery2 MusicFX NfcNci Photos RecorderPrebuilt SafetyHubPrebuilt SoundAmplifierPrebuilt Snap
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
