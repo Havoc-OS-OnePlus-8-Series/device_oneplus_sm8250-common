@@ -135,6 +135,7 @@
             <instance>SIM1</instance>
             <instance>eSE1</instance>
         </interface>
+        <fqname>@1.2::ISecureElement/SIM2</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.soundtrigger</name>
