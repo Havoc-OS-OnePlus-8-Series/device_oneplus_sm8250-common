@@ -184,9 +184,6 @@ Only the three quirks included above are recognized at this point:
 <MediaCodecs>
     <Include href="media_codecs_google_audio.xml" />
     <Include href="media_codecs_vendor_audio.xml" />
-    <!-- heilay.he@multimedia add for dolby decode 20200325 -->
-    <Include href="media_codecs_dolby_audio.xml" />
-    <!-- add end -->
     <Include href="media_codecs_google_telephony.xml" />
     <Settings>
         <Setting name="max-video-encoder-input-buffers" value="11" />

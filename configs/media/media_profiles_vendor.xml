@@ -241,6 +241,8 @@
      </EncoderProfile>
      <!-- VENDOR_EDIT add end -->
 
+    <!-- VENDOR_EDIT start -->
+    <!--
     <EncoderProfile quality="qhd" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="29400000"
@@ -266,6 +268,8 @@
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
+    -->
+    <!-- VENDOR_EDIT end -->
 
     <EncoderProfile quality="4kdci" fileFormat="mp4" duration="30">
       <Video codec="h264"
@@ -538,9 +542,9 @@
              height="1080"
              frameRate="30" />
       <!--VENDOR_EDIT END-->
-
+      <!-- Dodda@media ,20210219 ,change aac encoder maxBitRate from 156k to 256k, BUG-148027-->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="256000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
@@ -597,6 +601,7 @@
              channels="2" />
     </EncoderProfile>
 
+<!-- wangbuqing@media ,20210204 ,change aac encoder maxBitRate from 156000 to 256k -->
     <EncoderProfile quality="1080p" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="20000000"
@@ -605,11 +610,13 @@
              frameRate="30" />
 
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="256000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
 
+    <!-- VENDOR_EDIT start -->
+    <!--
     <EncoderProfile quality="qhd" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="29400000"
@@ -635,6 +642,8 @@
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
+    -->
+    <!-- VENDOR_EDIT end -->
 
     <EncoderProfile quality="4kdci" fileFormat="mp4" duration="30">
       <Video codec="h264"
@@ -1749,8 +1758,9 @@
         maxHFRFrameWidth="0" maxHFRFrameHeight="0"
         maxHFRMode="0"  />
 
+<!-- wangbuqing@media ,20210204 ,change aac encoder maxBitRate from 96000 to 256k -->
     <AudioEncoderCap name="aac" enabled="true"
-        minBitRate="8000" maxBitRate="96000"
+        minBitRate="8000" maxBitRate="256000"
         minSampleRate="8000" maxSampleRate="48000"
         minChannels="1" maxChannels="6" />
 

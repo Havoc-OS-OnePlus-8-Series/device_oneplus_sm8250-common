@@ -109,7 +109,7 @@
         <param key="hifi_filter" value="false"/>
         <param key="native_audio_mode" value="multiple_mix_dsp"/>
         <param key="hfp_pcm_dev_id" value="39"/>
-        <param key="input_mic_max_count" value="3"/>
+        <param key="input_mic_max_count" value="2"/>
     </config_params>
     <gain_db_to_level_mapping>
         <gain_level_map db="-59" level="5"/>
@@ -161,8 +161,12 @@
         <device name="SND_DEVICE_IN_VOICE_DMIC_TMUS" acdb_id="41"/>
         <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC_NS" acdb_id="41"/>
         <device name="SND_DEVICE_IN_VOICE_REC_HEADSET_MIC" acdb_id="23"/>
+        <device name="SND_DEVICE_OUT_MMI_MIC_SEAL_HANDSET" acdb_id="37"/>
         <!-- yewenliang@MM.Audio, 2019/12/25, Change acdb-id for unprocessed usb-mic -->
         <device name="SND_DEVICE_IN_UNPROCESSED_USB_HEADSET_MIC" acdb_id="133"/>
+        <!-- zhangrun@MM.Audio, 2020/06/09, Change acdb-id for game -->
+        <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC_NS_GAME" acdb_id="192"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_STEREO_GAME" acdb_id="190"/>
     </acdb_ids>
     <backend_names>
         <device name="SND_DEVICE_OUT_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
@@ -370,7 +374,6 @@
         <device name="SND_DEVICE_IN_HANDSET_QMIC_AEC" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_VOICE_REC_QMIC_FLUENCE" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_SPEAKER_TMIC_AEC" interface="TX_CDC_DMA_TX_3"/>
-        <device name="SND_DEVICE_IN_OZO" interface="TX_CDC_DMA_TX_3"/>
         <!-- liuhaituo@MM.Audio, 2019/6/18, end of config speaker and handset -->
     </backend_names>
     <!-- below values are for ref purpose to OEM, doesn't contain actual hardware info on MTP -->

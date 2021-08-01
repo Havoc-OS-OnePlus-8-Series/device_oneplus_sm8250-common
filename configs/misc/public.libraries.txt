@@ -59,6 +59,7 @@ libarcsoft_high_dynamic_range_v4.so
 libarcsoft_hdr_denoise_api_v4.so
 libarcsoft_fringe_remove.so
 libarcsoft_video_fringing_correction.so
+libhta_hexagon_runtime.so
 libqti-perfd-client.so
 libadsprpc.so
 libcdsprpc.so

@@ -2665,6 +2665,10 @@
         <ctl name="TFA_CHIP_SELECTOR" value="2" />
     </path>
 
+    <path name="mmi-mic-seal-handset">
+        <ctl name="TFA_CHIP_SELECTOR" value="3" />
+    </path>
+
 <!-- lifei@MM.Audio, 2018/02/24, add game mixer path -->
     <path name="speaker-ext-1">
     </path>
@@ -2860,7 +2864,7 @@
 
     <path name="qva-re-mic">
         <path name="dmic2" />
-        <ctl name="TX_DEC2 Volume" value="101" />
+        <ctl name="TX_DEC2 Volume" value="95" />
     </path>
 <!-- endif -->
 
