@@ -104,7 +104,7 @@ if [ "$(getprop persist.vendor.usb.config)" == "" -a "$(getprop ro.build.type)" 
 	              "sdm845" | "sdm710")
 		          setprop persist.vendor.usb.config diag,serial_cdev,rmnet,dpl,adb
 		      ;;
-	              "msmnile" | "sm6150" | "trinket" | "lito" | "atoll" | "bengal" | "lahaina")
+	              "msmnile" | "sm6150" | "trinket" | "lito" | "atoll" | "bengal" | "lahaina" | "holi")
 			  setprop persist.vendor.usb.config diag,serial_cdev,rmnet,dpl,qdss,adb
 		      ;;
 	              *)
@@ -250,3 +250,10 @@ case "$boot_mode" in
     echo "AFTER boot_mode: diag,adb" > /dev/kmsg
 esac
 #endif
+
+boot_mode=`getprop ro.vendor.factory_mode`
+if [ "$boot_mode" == "1" ]; then
+    echo "boot_mode: factory_mode" > /dev/kmsg
+    setprop persist.vendor.usb.config diag,adb
+    echo "AFTER boot_mode: diag,adb" > /dev/kmsg
+fi
