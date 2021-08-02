@@ -1,16 +1,16 @@
-# All unpinned blobs below are extracted from OnePlus8ProOxygen_15.E.37_OTA_0370_all_2106020020_5146aa6f4e1c
+# All unpinned blobs below are extracted from OnePlus9ROxygen_13.I.05_OTA_0050_all_2107230024_1c4eeb48d33cc
 
-# ACDB
-vendor/etc/acdbdata/adsp_avs_config.acdb
-vendor/etc/acdbdata/MTP/acdb_version
-vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
+# ACDB - from OnePlus8TOxygen_15.W.07_OTA_0070_all_2106281218_140a8901cd2adf
+vendor/etc/acdbdata/adsp_avs_config.acdb|2dbe0eb155813d1b096c2efeee9b297bc5a63e15
+vendor/etc/acdbdata/MTP/acdb_version|7099ffc555cc5eea20861f650b6d635a5027a615
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|101f1832ade2cb90550104ba5981516033c2cabd
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|ae3f5c3284201695e74978f78174223e173b1c22
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb|6525cbb771fc4d40ec71399223414c70c81ba4f1
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb|c08de6f186ffd408a6052c569633ec939d612a43
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb|6cdaadeef48ef7b2d530badc660d0a53b6f840e1
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb|00fd96bcc6edcf012a9cf3e263e318ae65211f97
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|9b602ed6732f2a6696efb48e7abeb53343cf6351
+vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp|dca8c672d02e8dc339bc9304201c82e1ae55d87a
 
 # ADSP
 vendor/bin/adsprpcd
@@ -97,16 +97,18 @@ vendor/lib64/libbtnv.so
 # Bluetooth (A2DP)
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib/btaudio_offload_if.so
 vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib64/btaudio_offload_if.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
@@ -371,9 +373,6 @@ vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 # CNE
 -vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd
-vendor/etc/cne/Nexus/ATT/ATT_profiles.xml
-vendor/etc/cne/Nexus/ROW/ROW_profiles.xml
-vendor/etc/cne/Nexus/VZW/VZW_profiles.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml
@@ -751,25 +750,44 @@ vendor/bin/hw/vendor.pixelworks.hardware.display.iris-service
 vendor/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service
 vendor/etc/init/vendor.pixelworks.hardware.display.iris-service.rc
 vendor/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc
-vendor/etc/inparm/irissoft/inParm1.txt
+vendor/etc/inparm/irissoft/mcfCheck.txt
+vendor/etc/inparm/irissoft/inParm.lst
+vendor/etc/inparm/irissoft/inParm1_center.txt
+vendor/etc/inparm/irissoft/inParm1_down.txt
+vendor/etc/inparm/irissoft/inParm1_up.txt
+vendor/etc/inparm/irissoft/inParm2_center.txt
+vendor/etc/inparm/irissoft/inParm2_down.txt
+vendor/etc/inparm/irissoft/inParm2_up.txt
+vendor/etc/inparm/irissoft/inParm3_center.txt
+vendor/etc/inparm/irissoft/inParm3_down.txt
+vendor/etc/inparm/irissoft/inParm3_up.txt
+vendor/etc/inparm/irissoft/inParm4_center.txt
+vendor/etc/inparm/irissoft/inParm4_down.txt
+vendor/etc/inparm/irissoft/inParm4_up.txt
+vendor/etc/inparm/irissoft/inParm5_center.txt
+vendor/etc/inparm/irissoft/inParm5_down.txt
+vendor/etc/inparm/irissoft/inParm5_up.txt
+vendor/etc/inparm/irissoft/inParm6_center.txt
+vendor/etc/inparm/irissoft/inParm6_down.txt
+vendor/etc/inparm/irissoft/inParm6_up.txt
+vendor/etc/inparm/irissoft/inParm8_a.txt
+vendor/etc/inparm/irissoft/inParm8_b.txt
+vendor/etc/inparm/irissoft/inParm8_c.txt
 vendor/etc/inparm/irissoft/inParm10.txt
 vendor/etc/inparm/irissoft/inParm11.txt
 vendor/etc/inparm/irissoft/inParm12.txt
-vendor/etc/inparm/irissoft/inParm13.txt
-vendor/etc/inparm/irissoft/inParm14.txt
-vendor/etc/inparm/irissoft/inParm15.txt
-vendor/etc/inparm/irissoft/inParm16.txt
-vendor/etc/inparm/irissoft/inParm17.txt
-vendor/etc/inparm/irissoft/inParm18.txt
-vendor/etc/inparm/irissoft/inParm2.txt
-vendor/etc/inparm/irissoft/inParm3.txt
-vendor/etc/inparm/irissoft/inParm4.txt
-vendor/etc/inparm/irissoft/inParm5.txt
-vendor/etc/inparm/irissoft/inParm6.txt
-vendor/etc/inparm/irissoft/inParm7.txt
-vendor/etc/inparm/irissoft/inParm8.txt
-vendor/etc/inparm/irissoft/inParm9.txt
-vendor/etc/inparm/irissoft/mcfCheck.txt
+vendor/etc/inparm/irissoft/inParm14_a.txt
+vendor/etc/inparm/irissoft/inParm14_b.txt
+vendor/etc/inparm/irissoft/inParm14_c.txt
+vendor/etc/inparm/irissoft/inParm16_center.txt
+vendor/etc/inparm/irissoft/inParm16_down.txt
+vendor/etc/inparm/irissoft/inParm16_up.txt
+vendor/etc/inparm/irissoft/inParm17_center.txt
+vendor/etc/inparm/irissoft/inParm17_down.txt
+vendor/etc/inparm/irissoft/inParm17_up.txt
+vendor/etc/inparm/irissoft/inParm18_center.txt
+vendor/etc/inparm/irissoft/inParm18_down.txt
+vendor/etc/inparm/irissoft/inParm18_up.txt
 vendor/etc/irissoft.fw
 -vendor/etc/vintf/manifest/vendor.pixelworks.hardware.display.iris-service.xml
 -vendor/etc/vintf/manifest/vendor.pixelworks.hardware.feature.irisfeature-service.xml
@@ -816,7 +834,6 @@ vendor/lib/libsmwrapper.so
 system_ext/lib/libmmosal.so
 system_ext/lib/libmmparser_lite.so
 system_ext/lib64/libmmosal.so
-vendor/etc/seccomp_policy/codec2.vendor.base.policy
 vendor/etc/system_properties.xml
 vendor/lib64/libmmosal.so
 
@@ -924,8 +941,8 @@ vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
 # Perf
-vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
-vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
+vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/perf/perfconfigstore.xml
@@ -1120,6 +1137,7 @@ vendor/lib64/ls_nq_client.so
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
+vendor/bin/init.qcom.sensors.sh
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
 vendor/etc/init/vendor.sensors.qti.rc
@@ -1130,7 +1148,9 @@ vendor/etc/sensors/config/bmi26x_0.json
 vendor/etc/sensors/config/bmi26x_0_crt.json
 vendor/etc/sensors/config/bmi26x_0_crt_cfg.json
 vendor/etc/sensors/config/bmp380_0.json
+vendor/etc/sensors/config/icm4x6xx_0.json
 vendor/etc/sensors/config/kona_ak991x_0.json
+vendor/etc/sensors/config/kona_amd_sw_disabled.json
 vendor/etc/sensors/config/kona_bmi26x_0.json
 vendor/etc/sensors/config/kona_bmp380_0.json
 vendor/etc/sensors/config/kona_bu52053nvx_0.json
@@ -1139,6 +1159,7 @@ vendor/etc/sensors/config/kona_dynamic_sensors.json
 vendor/etc/sensors/config/kona_hdk_ak991x_0.json
 vendor/etc/sensors/config/kona_hdk_lsm6dst_0.json
 vendor/etc/sensors/config/kona_hdk_lsm6dst_1.json
+vendor/etc/sensors/config/kona_icm4x6xx_0.json
 vendor/etc/sensors/config/kona_irq.json
 vendor/etc/sensors/config/kona_lps22hh_0.json
 vendor/etc/sensors/config/kona_lsm6dsm_0.json
@@ -1151,17 +1172,14 @@ vendor/etc/sensors/config/kona_qrd_lsm6dst_0.json
 vendor/etc/sensors/config/kona_qrd_sx932x_0.json
 vendor/etc/sensors/config/kona_qrd_tmd2725_0.json
 vendor/etc/sensors/config/kona_shtw2_0.json
-vendor/etc/sensors/config/kona_stk2232_0.json
 vendor/etc/sensors/config/kona_stk3a6x_0.json
+vendor/etc/sensors/config/kona_stk2232_0.json
 vendor/etc/sensors/config/kona_svr_bma4_0.json
 vendor/etc/sensors/config/kona_svr_bmg160_0.json
-vendor/etc/sensors/config/kona_svr_icm4x6xx_0.json
 vendor/etc/sensors/config/kona_svr_rpr0521rs_0.json
+vendor/etc/sensors/config/kona_sx932x_0.json
 vendor/etc/sensors/config/kona_sx9324_0.json
 vendor/etc/sensors/config/kona_sx9324up_0.json
-vendor/etc/sensors/config/kona_sx932x_0.json
-vendor/etc/sensors/config/kona_T0_sx9324_0.json
-vendor/etc/sensors/config/kona_T0_sx9324up_0.json
 vendor/etc/sensors/config/kona_tcs3408.json
 vendor/etc/sensors/config/kona_tcs3701.json
 vendor/etc/sensors/config/kona_tcs3707.json
@@ -1203,8 +1221,8 @@ vendor/etc/sensors/config/sns_tilt_sw_disabled.json
 vendor/etc/sensors/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/sns_wrist_pedo.json
-vendor/etc/sensors/config/stk2232_0.json
 vendor/etc/sensors/config/stk3a6x_0.json
+vendor/etc/sensors/config/stk2232_0.json
 vendor/etc/sensors/config/sx9324_0.json
 vendor/etc/sensors/config/sx9324up_0.json
 vendor/etc/sensors/config/tcs3408.json
@@ -1237,6 +1255,7 @@ vendor/etc/sensors/proto/sns_device_mode.proto
 vendor/etc/sensors/proto/sns_device_orient.proto
 vendor/etc/sensors/proto/sns_diag.proto
 vendor/etc/sensors/proto/sns_diag_sensor.proto
+vendor/etc/sensors/proto/sns_direct_channel.proto
 vendor/etc/sensors/proto/sns_distance_bound.proto
 vendor/etc/sensors/proto/sns_dpc.proto
 vendor/etc/sensors/proto/sns_ext_svc.proto
@@ -1340,6 +1359,7 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
 # Thermal engine
 vendor/bin/thermal-engine
+vendor/etc/thermal-engine.conf
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 
@@ -1347,7 +1367,6 @@ vendor/bin/thermal-engine
 -vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
-vendor/etc/thermal-engine.conf
 vendor/lib64/libtime_genoff.so
 
 # Touchscreen firmware
