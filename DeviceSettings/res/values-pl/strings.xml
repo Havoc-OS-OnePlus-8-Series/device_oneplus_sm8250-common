@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014-2017 The OmniROM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Device Settings -->
+    <string name="device_title">Ustawienia OnePlus</string>
+    <string name="device_summary">Dostosuj ustawienia urządzenia OnePlus</string>
+    <!-- Alert Slider -->
+    <string name="slider_title">Suwak powiadomień</string>
+    <string name="mute_media_title">Wycisz głośność multimediów w trybie cichym</string>
+    <string name="mute_media_summary">Będzie to skuteczne tylko dla głośnika rozmowy</string>
+    <!-- Display Modes -->
+    <string name="display_title">Tryb wyświetlania</string>
+    <string name="hbm_mode_summary">Natychmiastowo włącz szczytową luminancję wyświetlacza</string>
+    <string name="hbm_mode_title">Wysoka jasność</string>
+    <string name="auto_hbm_summary">Włącz szczytową luminancję w oparciu o światło słoneczne</string>
+    <string name="auto_hbm_title">Automatyczna wysoka jasność</string>
+    <string name="auto_hbm_threshold_title">Próg automatycznej wysokiej jasności (lux)</string>
+    <string name="auto_hbm_threshold_summary">Dostosuj szczytową luminancję wyświetlacza </string>
+    <string name="tile_hbm_mode">Wysoka jasność</string>
+    <string name="dc_mode_summary">Przyciemnij podświetlenie ekranu poprzez zmianę obwodu mocy ekranu</string>
+    <string name="dc_mode_title">Automatyczne przyciemnianie DC</string>
+    <!-- Doze -->
+    <string name="doze_panel_title">Drzemka</string>
+    <string name="ambient_display_gestures_title">Gesty ekranu otoczenia</string>
+    <string name="ambient_display_gestures_summary">Dodatkowe gesty do wybudzenia ekranu</string>
+    <string name="doze_settings_help_title">Pomoc</string>
+    <string name="doze_settings_help_text">Te funkcje używają czujników do uruchamiania impulsu powiadomień drzemki. Wybrany czujnik jest włączony tylko wtedy, gdy urządzenie otrzyma powiadomienie, co pomaga zmniejszyć zużycie baterii. Istnieje również opcja, aby włączyć wybrany czujnik, gdy tylko ekran zostanie wyłączony, spowoduje to większe zużycie baterii.</string>
+    <string name="dialog_ok">OK</string>
+    <string name="switch_bar_off">Wyłączone</string>
+    <string name="switch_bar_on">Włączone</string>
+    <string name="ambient_display_title">Aktywny wyświetlacz</string>
+    <string name="ambient_display_always_on_title">Zawsze włączony</string>
+    <string name="ambient_display_always_on_summary">Pokaż czas, ikony powiadomień i inne informacje. Zwiększone zużycie baterii.</string>
+    <string name="pickup_sensor_title">Czujnik podnoszenia</string>
+    <string name="pick_up_gesture_title">Podnoszenie</string>
+    <string name="disabled">Wyłączone</string>
+    <string name="pick_up_gesture_summary">Pulsujące powiadomienia przy podniesieniu</string>
+    <string name="pick_up_wake_gesture_summary">Wybudź urządzenie przy podniesieniu</string>
+    <string name="proximity_sensor_title">Czujnik zbliżeniowy</string>
+    <string name="pocket_gesture_title">Tryb kieszeniowy</string>
+    <string name="pocket_gesture_summary">Pulsujące powiadomienia po wyciągnięciu z kieszeni</string>
+    <!-- Dolby -->
+    <string name="dolby_category">Dolby</string>
+    <string name="dolby_title">Dolby Atmos</string>
+    <string name="dolby_summary">Skonfiguruj wyjście audio na podstawie treści multimedialnych</string>
+    <string name="dolby_info">Po włączeniu/wyłączeniu Dolby Atmos, użyj pauzy w odtwarzaniu mediów aby zmiany stały się skuteczne.</string>
+    <!-- FPS Info -->
+    <string name="fps_title">Informacje o liczniku klatek</string>
+    <string name="fps_info_title">Nakładka licznika klatek</string>
+    <string name="fps_info_summary">Pokaż nakładkę z aktualnymi klatkami na sekundę</string>
+    <string name="fps_info_color_title">Text Color</string>
+    <string name="fps_info_color_green">Zielony</string>
+    <string name="fps_info_color_red">Czerwony</string>
+    <string name="fps_info_color_blue">Niebieski</string>
+    <string name="fps_info_color_yellow">Żółty</string>
+    <string name="fps_info_color_black">Czarny</string>
+    <string name="fps_info_color_accent">Śledź system</string>
+    <string name="fps_info_position_title">Pozycja nakładki</string>
+    <string name="fps_info_position_top_left">Top left</string>
+    <string name="fps_info_position_top_center">Top center</string>
+    <string name="fps_info_position_top_right">Top right</string>
+    <string name="fps_info_position_bottom_left">Bottom left</string>
+    <string name="fps_info_position_bottom_center">Bottom center</string>
+    <string name="fps_info_position_bottom_right">Bottom right</string>
+    <string name="fps_info_text_size_title">Rozmiar czcionki</string>
+    <!-- Kcal -->
+    <string name="device_kcal_title">Kalibracja kolorów</string>
+    <string name="kcal_enabled_summary">Kalibracja wyświetlacza przy użyciu KCAL</string>
+    <string name="advanced_settings_kcal">Kalibracja kolorów wyświetlania</string>
+    <string name="cat_colormanagement">Ustawienia kolorów</string>
+    <string name="cat_calibration">Kalibracja wyświetlania</string>
+    <string name="kcal_enabled_title">Włącz KCAL</string>
+    <string name="color_red">Czerwony</string>
+    <string name="color_green">Zielony</string>
+    <string name="color_blue">Niebieski</string>
+    <string name="saturation">Nasycenie</string>
+    <string name="value">Jasność</string>
+    <string name="contrast">Kontrast</string>
+    <string name="hue">Odcień</string>
+    <string name="presets_dialog_title">Wybierz ustawienie</string>
+    <string name="preset_version_1">Wersja 1</string>
+    <string name="preset_version_2">Wersja 2</string>
+    <string name="preset_version_3">Wersja 3</string>
+    <string name="preset_triluminous">Potrójny</string>
+    <string name="preset_deep_black_white">Głęboki czarny i biały</string>
+    <string name="preset_deep_natural">Głęboki naturalny</string>
+    <string name="preset_cool_amoled">Amoled</string>
+    <string name="preset_extreme_amoled">Ekstremalny Amoled</string>
+    <string name="preset_warm_amoled">Ciepły Amoled</string>
+    <string name="preset_hybrid_mamba">Hybrid Mamba</string>
+    <string name="preset_sir_banger">Sir Banger</string>
+    <string name="preset_gerard_extrem_cool">Ekstremalnie chłodny Gerard</string>
+    <string name="preset_yoyoz808">Yoyoz808</string>
+    <string name="preset_purian">Puryński</string>
+    <string name="preset_deep_black_colorful">Głęboki czarny kolor</string>
+    <string name="preset_vomer_deep_rich">Womer Głębokie</string>
+    <string name="preset_franco">Franco</string>
+    <string name="preset_wrinklefree_cool">WrinkleFree chłodny</string>
+    <string name="preset_harley_tech">Harley-Tech</string>
+    <string name="preset_perfection">Perfekcja</string>
+    <string name="preset_banged_up">Rozwinięty</string>
+    <string name="preset_sim_cooler">SlimCooler</string>
+    <string name="preset_obsanity">Nieprzyzwoity</string>
+    <string name="preset_obsanity_ips">Obsanity IPS</string>
+    <string name="kcal_presets" translatable="false">@string/presets_dialog_title</string>
+    <string name="kcal_reset">Reset</string>
+    <!-- Log Tile -->
+    <string name="quick_settings_log_tile_label">Kafelek dziennika</string>
+    <string name="quick_settings_log_tile_dialog_title">Opcje</string>
+    <string name="cannot_get_su">Akcja nie powiodła się z powodu braku dostępu do superużytkownika (root)</string>
+    <!-- Vibration Strength -->
+    <string name="category_vibrator">Wibracje</string>
+    <string name="vib_strength_title_head">Moc</string>
+    <string name="vib_strength_summary_head">Określ moc wibracji</string>
+</resources>

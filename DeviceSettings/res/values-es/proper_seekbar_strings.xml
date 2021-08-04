@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="proper_seekbar_value">Valor: <xliff:g id="v">%s</xliff:g></string>
+  <string name="proper_seekbar_default_value">por defecto</string>
+  <string name="proper_seekbar_default_value_to_set">Valor predeterminado: <xliff:g id="v">%s</xliff:g>\nMantén pulsado para establecer</string>
+  <string name="proper_seekbar_default_value_is_set">Valor por defecto establecido</string>
+</resources>
