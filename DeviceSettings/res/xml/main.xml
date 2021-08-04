@@ -119,6 +119,34 @@
             android:title="@string/fps_info_title"
             android:summary="@string/fps_info_summary"
             android:persistent="true" />
+
+        <ListPreference
+            android:key="fps_info_position"
+            android:defaultValue="0"
+            android:icon="@drawable/ic_fps_position"
+            android:title="@string/fps_info_position_title"
+            android:summary="%s"
+            android:entries="@array/fps_info_position_entries"
+            android:entryValues="@array/fps_info_position_values" />
+
+        <ListPreference
+            android:key="fps_info_color"
+            android:defaultValue="0"
+            android:icon="@drawable/ic_fps_color"
+            android:title="@string/fps_info_color_title"
+            android:summary="%s"
+            android:entries="@array/fps_info_color_entries"
+            android:entryValues="@array/fps_info_color_values" />
+
+        <org.havoc.device.DeviceSettings.ProperSeekBarPreference
+            android:key="fps_info_text_size"
+            android:icon="@drawable/ic_fps_text"
+            android:title="@string/fps_info_text_size_title"
+            android:persistent="true"
+            android:max="5"
+            android:min="1"
+            settings:units=""
+            android:defaultValue="3" />
     </PreferenceCategory>
 
     <PreferenceCategory

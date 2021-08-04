@@ -63,6 +63,9 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_AUTO_HBM_SWITCH = "auto_hbm";
     public static final String KEY_AUTO_HBM_THRESHOLD = "auto_hbm_threshold";
     public static final String KEY_FPS_INFO = "fps_info";
+    public static final String KEY_FPS_INFO_POSITION = "fps_info_position";
+    public static final String KEY_FPS_INFO_COLOR = "fps_info_color";
+    public static final String KEY_FPS_INFO_TEXT_SIZE = "fps_info_text_size";
     public static final String KEY_MUTE_MEDIA = "mute_media";
     public static final String KEY_VIBSTRENGTH = "vib_strength";
 
@@ -74,12 +77,15 @@ public class DeviceSettings extends PreferenceFragment
 
     private Preference mDozeSettings;
     private static SwitchPreference mFpsInfo;
+    private static ListPreference mFpsInfoPosition;
+    private static ListPreference mFpsInfoColor;
     private static TwoStatePreference mHBMModeSwitch;
     private static TwoStatePreference mAutoHBMSwitch;
     private static TwoStatePreference mMuteMedia;
     private Preference mKcal;
 
     private ProperSeekBarPreference mVibratorStrengthPreference;
+    private ProperSeekBarPreference mFpsInfoTextSizePreference;
 
     private Vibrator mVibrator;
 
@@ -117,6 +123,15 @@ public class DeviceSettings extends PreferenceFragment
         mFpsInfo = (SwitchPreference) findPreference(KEY_FPS_INFO);
         mFpsInfo.setChecked(isFPSOverlayRunning());
         mFpsInfo.setOnPreferenceChangeListener(this);
+
+        mFpsInfoPosition = (ListPreference) findPreference(KEY_FPS_INFO_POSITION);
+        mFpsInfoPosition.setOnPreferenceChangeListener(this);
+
+        mFpsInfoColor = (ListPreference) findPreference(KEY_FPS_INFO_COLOR);
+        mFpsInfoColor.setOnPreferenceChangeListener(this);
+
+        mFpsInfoTextSizePreference = (ProperSeekBarPreference) findPreference(KEY_FPS_INFO_TEXT_SIZE);
+        mFpsInfoTextSizePreference.setOnPreferenceChangeListener(this);
 
         mMuteMedia = (TwoStatePreference) findPreference(KEY_MUTE_MEDIA);
         mMuteMedia.setChecked(PreferenceManager.getDefaultSharedPreferences(getContext()).getBoolean(DeviceSettings.KEY_MUTE_MEDIA, false));
@@ -159,6 +174,33 @@ public class DeviceSettings extends PreferenceFragment
                 this.getContext().startService(fpsinfo);
             } else {
                 this.getContext().stopService(fpsinfo);
+            }
+        } else if (preference == mFpsInfoPosition) {
+            int position = Integer.parseInt(newValue.toString());
+            Context mContext = getContext();
+            if (FPSInfoService.isPositionChanged(mContext, position)) {
+                FPSInfoService.setPosition(mContext, position);
+                if (isFPSOverlayRunning()) {
+                    restartFpsInfo(mContext);
+                }
+            }
+        } else if (preference == mFpsInfoColor) {
+            int color = Integer.parseInt(newValue.toString());
+            Context mContext = getContext();
+            if (FPSInfoService.isColorChanged(mContext, color)) {
+                FPSInfoService.setColorIndex(mContext, color);
+                if (isFPSOverlayRunning()) {
+                    restartFpsInfo(mContext);
+                }
+            }
+        } else if (preference == mFpsInfoTextSizePreference) {
+            int size = Integer.parseInt(newValue.toString());
+            Context mContext = getContext();
+            if (FPSInfoService.isSizeChanged(mContext, size - 1)) {
+                FPSInfoService.setSizeIndex(mContext, size - 1);
+                if (isFPSOverlayRunning()) {
+                    restartFpsInfo(mContext);
+                }
             }
         } else if (preference == mAutoHBMSwitch) {
             Boolean enabled = (Boolean) newValue;
@@ -226,4 +268,10 @@ public class DeviceSettings extends PreferenceFragment
                 return true;
         return false;
    }
+
+    private void restartFpsInfo(Context context) {
+        Intent fpsinfo = new Intent(context, FPSInfoService.class);
+        context.stopService(fpsinfo);
+        context.startService(fpsinfo);
+    }
 }

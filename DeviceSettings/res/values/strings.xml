@@ -64,8 +64,23 @@
 
     <!-- FPS Info -->
     <string name="fps_title">FPS Info</string>
-    <string name="fps_info_title">FPS overlay</string>
-    <string name="fps_info_summary">Show overlay with with current frames per second</string>
+    <string name="fps_info_title">FPS Overlay</string>
+    <string name="fps_info_summary">Show overlay with current frames per second</string>
+    <string name="fps_info_color_title">Text Color</string>
+    <string name="fps_info_color_green">Green</string>
+    <string name="fps_info_color_red">Red</string>
+    <string name="fps_info_color_blue">Blue</string>
+    <string name="fps_info_color_yellow">Yellow</string>
+    <string name="fps_info_color_black">Black</string>
+    <string name="fps_info_color_accent">Follow System</string>
+    <string name="fps_info_position_title">Overlay Position</string>
+    <string name="fps_info_position_top_left">Top left</string>
+    <string name="fps_info_position_top_center">Top center</string>
+    <string name="fps_info_position_top_right">Top right</string>
+    <string name="fps_info_position_bottom_left">Bottom left</string>
+    <string name="fps_info_position_bottom_center">Bottom center</string>
+    <string name="fps_info_position_bottom_right">Bottom right</string>
+    <string name="fps_info_text_size_title">Text Size</string>
 
     <!-- Kcal -->
     <string name="device_kcal_title">Color Calibration</string>
