@@ -59,6 +59,7 @@
         </activity>
 
         <activity android:name=".DeviceSettings" />
+        <activity android:name=".KeyHandler" />
 
         <receiver 
             android:name="org.havoc.device.DeviceSettings.Startup" 

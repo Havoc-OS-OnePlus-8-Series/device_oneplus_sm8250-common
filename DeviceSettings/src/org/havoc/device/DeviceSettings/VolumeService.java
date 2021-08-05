@@ -30,11 +30,13 @@ public class VolumeService {
     private static final int MUTE_VOLUME = 1;
     private static final int RESTORE_VOLUME = 2;
 
-    public static final String MUTE_KEY = "device_settings_mute";
-    public static final String VOLUME_SPEAKER_KEY = "device_settings_volume_speaker";
+    private static final String MUTE_KEY = "device_settings_mute";
+    private static final String VOLUME_SPEAKER_KEY = "device_settings_volume_speaker";
 
     public static void setEnabled(Context context, boolean enabled) {
         Settings.System.putInt(context.getContentResolver(), MUTE_KEY, enabled ? 1 : 0);
+        AudioManager mAudioManager = context.getSystemService(AudioManager.class);
+        changeMediaVolume(mAudioManager, context);
     }
 
     private static boolean isCurrentlyEnabled(Context context) {
@@ -48,7 +50,9 @@ public class VolumeService {
     private static boolean isSpeakerOutput(Context context) {
         MediaRouter mr = (MediaRouter) context.getSystemService(Context.MEDIA_ROUTER_SERVICE);
         MediaRouter.RouteInfo ri = mr.getSelectedRoute(MediaRouter.ROUTE_TYPE_LIVE_AUDIO);
-        return ri.getName().equals("Phone");
+        String mSpeakerOutput = context.getResources().getString(
+                com.android.internal.R.string.default_audio_route_name);
+        return ri.getName().equals(mSpeakerOutput);
     }
 
     private static void saveVolume(Context context, int volume) {
@@ -71,30 +75,23 @@ public class VolumeService {
         if (isCurrentlyEnabled) {
             if (!isSpeakerOutput) {
                 return NO_CHANGE_VOLUME;
-            }
-            if (isSilentMode) {
+            } else if (isSilentMode) {
                 return currentVolume != 0 ? MUTE_VOLUME : NO_CHANGE_VOLUME;
-            }
-            else {
+            } else {
                 return (currentVolume == 0 && savedVolume != 0) ? RESTORE_VOLUME : NO_CHANGE_VOLUME;
             }
         }
         return (currentVolume == 0 && savedVolume != 0 && isSilentMode) ? RESTORE_VOLUME : NO_CHANGE_VOLUME;
     }
     
-    public static void changeMediaVolume(Context context) {
-        AudioManager mAudioManager = context.getSystemService(AudioManager.class);
-        boolean isCurrentlyEnabled = isCurrentlyEnabled(context);
-        boolean isSpeakerOutput = isSpeakerOutput(context);
-        boolean isSilentMode = isSilentMode(mAudioManager);
+    public static void changeMediaVolume(AudioManager mAudioManager, Context context) {
         int currentVolume = getMediaVolume(mAudioManager);
         int savedVolume = getSavedVolume(context);
-        int shouldChange = shouldChangeMediaVolume(isCurrentlyEnabled, isSpeakerOutput, currentVolume, savedVolume, isSilentMode);
+        int shouldChange = shouldChangeMediaVolume(isCurrentlyEnabled(context), isSpeakerOutput(context), currentVolume, savedVolume, isSilentMode(mAudioManager));
         if (shouldChange == MUTE_VOLUME) {
              saveVolume(context, currentVolume);
              setMediaVolume(mAudioManager, 0);
-        }
-        else if (shouldChange == RESTORE_VOLUME) {
+        } else if (shouldChange == RESTORE_VOLUME) { 
              setMediaVolume(mAudioManager, savedVolume);
              saveVolume(context, 0); 
         }

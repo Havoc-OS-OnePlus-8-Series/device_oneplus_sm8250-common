@@ -220,7 +220,6 @@ public class DeviceSettings extends PreferenceFragment
         } else if (preference == mMuteMedia) {
             Boolean enabled = (Boolean) newValue;
             VolumeService.setEnabled(getContext(), enabled);
-            VolumeService.changeMediaVolume(getContext());
         } else if (preference == mVibratorStrengthPreference) {
     	    int value = Integer.parseInt(newValue.toString());
             SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
