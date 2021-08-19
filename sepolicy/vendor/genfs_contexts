@@ -19,6 +19,7 @@ genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_p3_mode                u:object_r:sysfs_color:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_srgb_color_mode        u:object_r:sysfs_color:s0
 genfscon sysfs /devices/platform/soc/soc:tri_state_key/hall_data_calib                                                 u:object_r:sysfs_tri_state_key:s0
+genfscon sysfs /devices/platform/soc/soc:tri_state_key/tri_state                                                       u:object_r:sysfs_tri_state_key:s0
 genfscon sysfs /module/memplus_core/parameters                                                                         u:object_r:sysfs_memplus:s0
 genfscon sysfs /module/qpnp_smb5/parameters/call_on                                                                    u:object_r:sysfs_dash_charger:s0
 genfscon sysfs /module/qpnp_smb5/parameters/video_call_on                                                              u:object_r:vendor_sysfs_video_call_on:s0
