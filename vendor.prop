@@ -20,6 +20,7 @@ persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 ro.audio.monitorRotation=true
 ro.config.media_vol_steps=30
 ro.vendor.audio.sdk.fluencetype=fluence
+ro.config.vc_call_vol_steps=9
 ro.vendor.audio.sdk.ssr=false
 ro.vendor.dolby.dax.version=DAX3_3.5.6.11_r1
 vendor.audio.adm.buffering.ms=2
@@ -120,6 +121,8 @@ vendor.camera.aux.packagelist=com.oem.autotest,com.oneplus.factorymode,com.onepl
 # Crypto
 ro.crypto.allow_encrypt_override=true
 ro.crypto.volume.filenames_mode=aes-256-cts
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.metadata.method=dm-default-key
 
 # Dalvik
 dalvik.vm.heapgrowthlimit=256m
