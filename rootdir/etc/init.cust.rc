@@ -1,0 +1,2 @@
+on property:ro.boot.product.hardware.sku=9
+    setprop persist.radio.multisim.config ssss

@@ -212,6 +212,7 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.color.rc \
     init.crda.sh \
+    init.cust.rc \
     init.mdm.sh \
     init.oem.debug.rc \
     init.oem.minidump.sdx55m.rc \
