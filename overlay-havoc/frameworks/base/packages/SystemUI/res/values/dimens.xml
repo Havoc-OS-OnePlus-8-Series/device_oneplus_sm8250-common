@@ -25,4 +25,7 @@
     <dimen name="tri_state_down_dialog_position">516px</dimen>
     <dimen name="tri_state_middle_dialog_position">385px</dimen>
     <dimen name="tri_state_up_dialog_position">254px</dimen>
+
+    <!-- Starting padding for a left-aligned quick status bar clock -->
+    <dimen name="quick_status_bar_left_clock_starting_padding">@dimen/status_bar_padding_start</dimen>
 </resources>
