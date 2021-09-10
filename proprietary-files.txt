@@ -507,7 +507,7 @@ vendor/lib64/libdpmqmihal.so|67a75d6bd39f4bc825e14d21fa5b61e26ac82b22
 # Dolby
 system/lib64/vendor.dolby.hardware.dms@2.0.so
 -system_ext/app/OPOnlineConfig/OPOnlineConfig.apk
--system_ext/app/OPSoundTuner/OPSoundTuner.apk
+-system_ext/app/OPSoundTuner/OPSoundTuner.apk|d72519fc46a6a74d0cab049bea860cabb575d63e
 system_ext/etc/permissions/com.dolby.daxservice.xml
 system_ext/etc/permissions/com.oneplus.software.xml
 -system_ext/priv-app/daxService/daxService.apk
