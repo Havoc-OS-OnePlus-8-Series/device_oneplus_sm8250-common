@@ -1,16 +1,16 @@
 # All unpinned blobs below are extracted from OnePlus9ROxygen_13.I.05_OTA_0050_all_2107230024_1c4eeb48d33cc
 
-# ACDB - from OnePlus8TOxygen_15.W.07_OTA_0070_all_2106281218_140a8901cd2adf
-vendor/etc/acdbdata/adsp_avs_config.acdb|2dbe0eb155813d1b096c2efeee9b297bc5a63e15
-vendor/etc/acdbdata/MTP/acdb_version|7099ffc555cc5eea20861f650b6d635a5027a615
-vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|101f1832ade2cb90550104ba5981516033c2cabd
-vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|ae3f5c3284201695e74978f78174223e173b1c22
-vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb|6525cbb771fc4d40ec71399223414c70c81ba4f1
-vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb|c08de6f186ffd408a6052c569633ec939d612a43
-vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb|6cdaadeef48ef7b2d530badc660d0a53b6f840e1
-vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb|00fd96bcc6edcf012a9cf3e263e318ae65211f97
-vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|9b602ed6732f2a6696efb48e7abeb53343cf6351
-vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp|dca8c672d02e8dc339bc9304201c82e1ae55d87a
+# ACDB
+odm/etc/acdbdata/acdb_version:vendor/etc/acdbdata/MTP/acdb_version
+odm/etc/acdbdata/Bluetooth_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+odm/etc/acdbdata/General_cal.acdb:vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+odm/etc/acdbdata/Global_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+odm/etc/acdbdata/Handset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+odm/etc/acdbdata/Hdmi_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+odm/etc/acdbdata/Headset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+odm/etc/acdbdata/Speaker_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+vendor/etc/acdbdata/adsp_avs_config.acdb
+vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 
 # ADSP
 vendor/bin/adsprpcd
@@ -81,8 +81,8 @@ vendor/lib/libqtigef.so
 vendor/lib/libssrec.so
 vendor/lib64/libadsprpc.so
 
-# Audio firmware
-vendor/firmware/tfa98xx.cnt
+# Audio firmware - from OnePlus9Oxygen_22.I.08_GLO_0080_2105011324
+vendor/firmware/tfa98xx.cnt|3273540edc56b3959a4c8d994c3e2fa0bd6d2cb8
 
 # Authsecret
 vendor/bin/hw/android.hardware.authsecret@1.0-service-qti
