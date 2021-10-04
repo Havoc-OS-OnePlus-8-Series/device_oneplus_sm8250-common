@@ -31,6 +31,9 @@ persist.vendor.cne.feature=1
 # DPM
 persist.vendor.dpm.feature=9
 
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
+
 # Fingerprint
 vendor.boot.fingerprintbstate=orange
 
