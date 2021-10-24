@@ -26,7 +26,4 @@
 
     <!-- Whether to show min/max refresh rate in display settings -->
     <bool name="config_show_refresh_rate_controls">true</bool>
-
-    <!-- Battery health -->
-    <string name="config_batteryHealthNode">/sys/class/power_supply/bms/battery_h</string>
 </resources>
