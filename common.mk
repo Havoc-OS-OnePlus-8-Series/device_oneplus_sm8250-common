@@ -159,6 +159,7 @@ PRODUCT_PACKAGES += \
     libreverbwrapper \
     libsndmonitor \
     libspkrprot \
+    libssrec \
     libvisualizer \
     libvolumelistener
 
