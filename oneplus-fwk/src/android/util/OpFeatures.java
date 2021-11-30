@@ -372,20 +372,21 @@ public final class OpFeatures {
     public static final int OP_FEATURE_IMS_RECOVERY = 359;
     public static final int OP_FEATURE_SMART_WIFI_CALLING_MODE = 360;
     public static final int OP_FEATURE_SERVICE_RECOVERY = 361;
-    public static final int OP_FEATURE_AOD_ALWAYS_ON_IN_LABORATORY = 362;
-    public static final int OP_FEATURE_USKU = 363;
-    public static final int OP_FEATURE_DEFAULT_HIDE_VOLTE_FOR_EU = 364;
-    public static final int OP_FEATURE_GPS_ENABLE_LPP_UP_FOR_TMO = 365;
-    public static final int OP_FEATURE_CHARGING_ANIM_P3_REPEAT_MAX_COUNT_4 = 366;
-    public static final int OP_FEATURE_DISPLAY_LCD = 367;
-    public static final int OP_FEATURE_NEW_BATTERY_FILE_NODE_PATH = 368;
-    public static final int OP_FEATURE_MM_MUTE_DELAY_SWITCH = 369;
-    public static final int OP_FEATURE_ONLINE_CONFIG_NETWORK = 370;
-    public static final int OP_FEATURE_KEEP_HIGH_VSYNC = 371;
-    public static final int OP_FEATURE_MM_SYNC_ACDB_ID_FROM_Q = 372;
-    public static final int OP_FEATURE_BITMOJI_AOD_ENABLED = 373;
+    public static final int OP_FEATURE_UST_CS_REDIAL = 362;
+    public static final int OP_FEATURE_AOD_ALWAYS_ON_IN_LABORATORY = 363;
+    public static final int OP_FEATURE_USKU = 364;
+    public static final int OP_FEATURE_DEFAULT_HIDE_VOLTE_FOR_EU = 365;
+    public static final int OP_FEATURE_GPS_ENABLE_LPP_UP_FOR_TMO = 366;
+    public static final int OP_FEATURE_CHARGING_ANIM_P3_REPEAT_MAX_COUNT_4 = 367;
+    public static final int OP_FEATURE_DISPLAY_LCD = 368;
+    public static final int OP_FEATURE_NEW_BATTERY_FILE_NODE_PATH = 369;
+    public static final int OP_FEATURE_MM_MUTE_DELAY_SWITCH = 370;
+    public static final int OP_FEATURE_ONLINE_CONFIG_NETWORK = 371;
+    public static final int OP_FEATURE_KEEP_HIGH_VSYNC = 372;
+    public static final int OP_FEATURE_MM_SYNC_ACDB_ID_FROM_Q = 373;
+    public static final int OP_FEATURE_BITMOJI_AOD_ENABLED = 374;
 
-    private static final BitSet sFeatures = new BitSet(375);
+    private static final BitSet sFeatures = new BitSet(376);
 
     static {
         File file = new File("/odm/etc/odm_feature_list");
