@@ -26,6 +26,11 @@
             android:title="@string/mute_media_title"
             android:summary="@string/mute_media_summary"
             android:persistent="true" />
+
+        <Preference
+            android:icon="@drawable/ic_info_outline"
+            android:summary="@string/mute_media_warning"
+            android:persistent="false" />
     </PreferenceCategory>
 
     <PreferenceCategory

@@ -20,8 +20,9 @@
 
     <!-- Alert Slider -->
     <string name="slider_title">Alert Slider</string>
-    <string name="mute_media_title">Mute media volume on silent mode</string>
-    <string name="mute_media_summary">This will only take effect for speaker</string>
+    <string name="mute_media_title">Mute media volume</string>
+    <string name="mute_media_summary">Turn off media volume when the alert slider is set to silent</string>
+    <string name="mute_media_warning">This will only take effect for speaker</string>
 
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
