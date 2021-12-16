@@ -9,5 +9,5 @@ on property:ro.boot.rf_version=13
     setprop persist.radio.multisim.config dsds
     
 # Europe
-on property:ro.boot.rf_version=21
+on property:ro.boot.rf_version=14
     setprop persist.radio.multisim.config dsds
