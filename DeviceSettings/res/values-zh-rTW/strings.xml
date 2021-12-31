@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014-2017 The OmniROM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Device Settings -->
+    <string name="device_title">OnePlus 設定</string>
+    <string name="device_summary">調整 OnePlus 設備</string>
+
+    <!-- Alert Slider -->
+    <string name="slider_title">三段式開關</string>
+    <string name="mute_media_title">靜音媒體音量</string>
+    <string name="mute_media_summary">切換到靜音模式時，將媒體音量設為靜音</string>
+    <string name="mute_media_warning">該開關僅在聲音外放時生效</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">值： <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">預設</string>
+    <string name="custom_seekbar_default_value_to_set">預設值： <xliff:g id="v">%s</xliff:g>\n請長按來設定</string>
+    <string name="custom_seekbar_default_value_is_set">已設定為預設值</string>
+
+    <!-- Display Modes -->
+    <string name="display_title">顯示</string>
+    <string name="hbm_mode_summary">立即將螢幕設為最大亮度</string>
+    <string name="hbm_mode_title">高亮度模式</string>
+    <string name="auto_hbm_summary">根據光線強度自動打開高亮度模式</string>
+    <string name="auto_hbm_title">自動高亮度模式</string>
+    <string name="auto_hbm_threshold_title">自動高亮度閾值 (lux)</string>
+    <string name="auto_hbm_threshold_summary">調節模式開啟時的最大亮度</string>
+    <string name="tile_hbm_mode">高亮度模式</string>
+    <string name="dc_mode_summary">通過改變電功率來調整螢幕背光</string>
+    <string name="dc_mode_title">DC 調光</string>
+	
+    <!-- Dolby -->
+    <string name="dolby_category">音訊</string>
+    <string name="enable_dolby_title">杜比全景聲</string>
+    <string name="enable_dolby_summary">開關杜比全景聲需要重新啟動設備</string>
+    <string name="dolby_title">配置</string>
+    <string name="dolby_summary">根據播放的媒體內容調整音訊輸出</string>
+	
+    <!-- Doze -->
+    <string name="doze_panel_title">休眠</string>
+    <string name="ambient_display_gestures_title">環境顯示手勢</string>
+    <string name="ambient_display_gestures_summary">自訂喚醒螢幕的其他手勢</string>
+    <string name="doze_settings_help_title">協助</string>
+    <string name="doze_settings_help_text">這些功能使用傳感器事件啟動休眠通知。僅在設備收到通知時才啟用所選的傳感器，這有助於減少電池的耗電量。還有一個選項，在螢幕關閉後立即啟用選中的傳感器，這將導致更多的電池耗電量。</string>
+    <string name="dialog_ok">好的</string>
+    <string name="switch_bar_off">關閉</string>
+    <string name="switch_bar_on">開啟</string>
+    <string name="ambient_display_title">環境顯示</string>
+    <string name="ambient_display_always_on_title">永遠顯示</string>
+    <string name="ambient_display_always_on_summary">顯示時間、通知圖示和其他資訊。這會增加耗電量。</string>
+    <string name="pickup_sensor_title">撿拾傳感器</string>
+    <string name="pick_up_gesture_title">撿拾</string>
+    <string name="disabled">停用</string>
+    <string name="pick_up_gesture_summary">拿取時顯示通知</string>
+    <string name="pick_up_wake_gesture_summary">拿取時喚醒設備</string>
+    <string name="proximity_sensor_title">距離傳感器</string>
+    <string name="pocket_gesture_title">口袋</string>
+    <string name="pocket_gesture_summary">從口袋中取出時顯示通知</string>
+	
+    <!-- FPS Info -->
+    <string name="fps_title">FPS 幀率顯示</string>
+    <string name="fps_info_title">FPS Overlay</string>
+    <string name="fps_info_summary">顯示幀率懸浮視窗</string>
+    <string name="fps_info_color_title">文字顏色</string>
+    <string name="fps_info_color_green">綠色</string>
+    <string name="fps_info_color_red">紅色</string>
+    <string name="fps_info_color_blue">藍色</string>
+    <string name="fps_info_color_yellow">黃色</string>
+    <string name="fps_info_color_black">黑色</string>
+    <string name="fps_info_color_accent">使用系統設定</string>
+    <string name="fps_info_position_title">懸浮視窗位置</string>
+    <string name="fps_info_position_top_left">頂部偏左</string>
+    <string name="fps_info_position_top_center">頂部置中</string>
+    <string name="fps_info_position_top_right">頂部靠右</string>
+    <string name="fps_info_position_bottom_left">底部靠左</string>
+    <string name="fps_info_position_bottom_center">底部置中</string>
+    <string name="fps_info_position_bottom_right">底部靠右</string>
+    <string name="fps_info_text_size_title">文字大小</string>
+	
+    <!-- Log Tile -->
+    <string name="quick_settings_log_tile_label">抓取 logcat</string>
+    <string name="quick_settings_log_tile_dialog_title">選項</string>
+    <string name="cannot_get_su">操作失敗，無法取得 root 權限！請確認是否安裝 Magisk！</string>
+	
+    <!-- Touchscreen gestures -->
+    <string name="screen_gestures_panel_title">手勢</string>
+    <string name="touchscreen_gesture_settings_title">觸控螢幕手勢</string>
+    <string name="touchscreen_gesture_settings_summary">執行各種手勢以進行快速操作</string>
+
+    <!-- Network -->
+    <string name="network_title">網路</string>
+    <string name="nr_mode_switcher_title">5G 模式切換</string>
+    <string name="nsa_only">僅 NSA</string>
+    <string name="sa_only">僅 SA</string>
+    <string name="nsa_sa">NSA + SA</string>
+    <string name="nr_mode_switcher_warning">重新啟動裝置或是切換 SIM 卡後，請重新設定</string>
+    <string name="service_not_ready">服務未啟動，請重新再試一次</string>
+    <string name="unavailable_sim_slot">無法取得當前使用行動網路的卡槽，請重新再試一次</string>
+	
+    <!-- Touchpanel -->
+    <string name="touchpanel_title">觸控螢幕</string>
+    <string name="game_mode_title">遊戲模式</string>
+    <string name="game_mode_summary">強制全局使用 240Hz 觸控採樣率</string>
+    <string name="game_mode_warning">會增加電池耗電量</string>
+	
+    <!-- Unsupported feature -->
+    <string name="unsupported_feature">目前的 Kernel 不支援該功能</string>
+	
+    <!-- Vibration Slider -->
+    <string name="category_vibrator">震動</string>
+    <string name="vib_strength_title_head">強度</string>
+    <string name="vib_strength_summary_head">自訂震動強度</string>
+</resources>
