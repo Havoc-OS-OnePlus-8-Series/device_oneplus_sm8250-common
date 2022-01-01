@@ -84,3 +84,6 @@ persist.vendor.arcsoft.sn.dumprawinfo                 u:object_r:ctl_default_pro
 vendor.boot.project_name                              u:object_r:ctl_default_prop:s0
 vendor.oneplus.gallery.debugStory                     u:object_r:ctl_default_prop:s0
 persist.vendor.apsSN.algo.enable                      u:object_r:ctl_default_prop:s0
+
+# Hardware
+ro.hardware.chipname                                  u:object_r:exported_default_prop:s0
