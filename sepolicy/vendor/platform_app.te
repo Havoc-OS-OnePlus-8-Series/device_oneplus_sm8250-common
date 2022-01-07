@@ -12,6 +12,7 @@ typeattribute platform_app hal_camera_client;
 allow platform_app adsprpcd_file:dir { search getattr read };
 allow platform_app vendor_camera_data_file:dir getattr;
 allow platform_app hal_camera_default:binder { call transfer };
+dontaudit platform_app mnt_vendor_file:dir search;
 
 get_prop(platform_app, ctl_default_prop)
 get_prop(platform_app, vendor_default_prop)
