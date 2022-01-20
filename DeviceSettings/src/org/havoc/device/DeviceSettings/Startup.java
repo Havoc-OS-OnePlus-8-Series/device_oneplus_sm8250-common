@@ -47,6 +47,10 @@ public class Startup extends BroadcastReceiver {
         if (enabled) {
             context.startService(new Intent(context, FPSInfoService.class));
         }
+        enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_EDGE_TOUCH, true);
+        if (enabled) {
+            restore(EdgeTouchSwitch.getFile(), enabled);
+        }
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_GAME_SWITCH, false);
         if (enabled) {
             restore(GameModeSwitch.getFile(), enabled);

@@ -95,6 +95,9 @@
     <string name="game_mode_title">游戏模式</string>
     <string name="game_mode_summary">强制全局使用 240Hz 触控采样率</string>
     <string name="game_mode_warning">会增加电池用量</string>
+    <string name="edge_touch_title">解除曲面触控限制</string>
+    <string name="edge_touch_summary">改善在游戏中的多点触控体验</string>
+    <string name="edge_touch_warning">会增加误触的可能性</string>
     <!-- Unsupported feature -->
     <string name="unsupported_feature">当前内核不支持该功能</string>
     <!-- Vibration Slider -->

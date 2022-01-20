@@ -76,6 +76,7 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_FPS_INFO_COLOR = "fps_info_color";
     public static final String KEY_FPS_INFO_TEXT_SIZE = "fps_info_text_size";
     public static final String KEY_NR_MODE_SWITCHER = "nr_mode_switcher";
+    public static final String KEY_EDGE_TOUCH = "edge_touch";
     public static final String KEY_GAME_SWITCH = "game_mode";
     public static final String KEY_VIBSTRENGTH = "vib_strength";
 
@@ -95,6 +96,7 @@ public class DeviceSettings extends PreferenceFragment
     private static ListPreference mFpsInfoColor;
     private static ListPreference mNrModeSwitcher;
     private static TwoStatePreference mHBMModeSwitch;
+    private static TwoStatePreference mEdgeTouchSwitch;
     private static TwoStatePreference mGameModeSwitch;
     private static TwoStatePreference mAutoHBMSwitch;
     private static TwoStatePreference mMuteMedia;
@@ -173,6 +175,16 @@ public class DeviceSettings extends PreferenceFragment
 
         mNrModeSwitcher = (ListPreference) findPreference(KEY_NR_MODE_SWITCHER);
         mNrModeSwitcher.setOnPreferenceChangeListener(this);
+
+        mEdgeTouchSwitch = (TwoStatePreference) findPreference(KEY_EDGE_TOUCH);
+        if (EdgeTouchSwitch.isSupported()) {
+            mEdgeTouchSwitch.setEnabled(true);
+        } else {
+            mEdgeTouchSwitch.setEnabled(false);
+            mEdgeTouchSwitch.setSummary(getString(R.string.unsupported_feature));
+        }
+        mEdgeTouchSwitch.setChecked(EdgeTouchSwitch.isCurrentlyEnabled(this.getContext()));
+        mEdgeTouchSwitch.setOnPreferenceChangeListener(new EdgeTouchSwitch());
 
         mGameModeSwitch = (TwoStatePreference) findPreference(KEY_GAME_SWITCH);
         if (GameModeSwitch.isSupported()) {

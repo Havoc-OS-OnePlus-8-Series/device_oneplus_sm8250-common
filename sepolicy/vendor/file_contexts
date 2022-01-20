@@ -173,6 +173,7 @@
 /mnt/vendor/persist/engineermode/fpqrcode                                                          u:object_r:vendor_persist_fingerprint_file:s0
 
 # Touchpanel
+/proc/touchpanel/tpedge_limit_enable         u:object_r:proc_touchpanel:s0
 /proc/touchpanel/force_game_switch_enable    u:object_r:proc_touchpanel:s0
 
 # Hexagon DSP-side executable needed for Halide operation

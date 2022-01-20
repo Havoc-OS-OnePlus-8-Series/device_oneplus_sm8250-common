@@ -147,6 +147,18 @@
         <service android:name=".Services.AutoHBMService"
 		 android:exported="false" />
 
+        <!-- Edge Touch Tile -->
+        <service
+            android:name=".Services.EdgeTouchTileService"
+            android:icon="@drawable/ic_edge_touch"
+            android:label="@string/edge_touch_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action
+                    android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+
         <!-- FPS Info Service -->
         <service android:name=".Services.FPSInfoService"
                 android:exported="false">
