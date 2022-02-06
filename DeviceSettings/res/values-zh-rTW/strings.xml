@@ -115,6 +115,9 @@
     <string name="game_mode_title">遊戲模式</string>
     <string name="game_mode_summary">強制全局使用 240Hz 觸控採樣率</string>
     <string name="game_mode_warning">會增加電池耗電量</string>
+    <string name="edge_touch_title">曲面觸控</string>
+    <string name="edge_touch_summary">改善在遊戲中的多點觸控體驗</string>
+    <string name="edge_touch_warning">警告：有可能增加誤觸的可能性</string>
 	
     <!-- Unsupported feature -->
     <string name="unsupported_feature">目前的 Kernel 不支援該功能</string>
