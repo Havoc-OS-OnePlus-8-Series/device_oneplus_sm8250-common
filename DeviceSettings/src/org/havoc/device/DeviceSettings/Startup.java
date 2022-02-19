@@ -32,8 +32,6 @@ import org.havoc.device.DeviceSettings.Utils.Utils;
 
 public class Startup extends BroadcastReceiver {
 
-    private static final String ONE_TIME_DOLBY = "dolby_init_disabled";
-
     @Override
     public void onReceive(final Context context, final Intent bootintent) {
 
@@ -54,13 +52,6 @@ public class Startup extends BroadcastReceiver {
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_GAME_SWITCH, false);
         if (enabled) {
             restore(GameModeSwitch.getFile(), enabled);
-        }
-        enabled = sharedPrefs.getBoolean(ONE_TIME_DOLBY, false);
-        if (!enabled) {
-            // we want to disable it by default, only once.
-            DolbySwitch dolbySwitch = new DolbySwitch(context);
-            dolbySwitch.setEnabled(false);
-            sharedPrefs.edit().putBoolean(ONE_TIME_DOLBY, true).apply();
         }
         DozeUtils.checkDozeService(context);
         DeviceSettings.restoreVibStrengthSetting(context);

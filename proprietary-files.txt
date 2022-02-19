@@ -544,13 +544,17 @@ vendor/lib64/libssd.so|0d037418e3bdc6d9ba94ce7020a04e85a06fab96
 vendor/lib64/libtzdrmgenprov.so|16b438118f53ae30889286b66cbf47a9c404cb30
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|5b1046bc7c8a3f590bfedde06490b51adfeca923
 
+# Dolby-DaxUI (system) - from
+-system_ext/priv-app/DaxUI/DaxUI.apk|66729403dc0101ff82af4f2e9698180ae170a3fc
+system_ext/etc/permissions/privapp-com.dolby.daxappui.xml|b783016728b17eadfcdad662ccaf546afbeab856
+system_ext/etc/permissions/privapp-com.dolby.daxservice.xml|cdd700ce16303ff2baa41eac44ed779f545db418
+system_ext/etc/sysconfig/config-com.dolby.daxappui.xml|43c610f41061f49959ce07b26c60427b8767e535
+system_ext/etc/sysconfig/config-com.dolby.daxservice.xml|7690774632fe32269657fc1a2a0c941c7cd83f3d
+system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml|f647356bd3a4bb4174e873e4544c2921d51fd4d2
+
 # Dolby (system)
--system_ext/app/OPOnlineConfig/OPOnlineConfig.apk
--system_ext/app/OPSoundTuner/OPSoundTuner.apk|d72519fc46a6a74d0cab049bea860cabb575d63e
 -system_ext/priv-app/daxService/daxService.apk
 system/lib64/vendor.dolby.hardware.dms@2.0.so
-system_ext/etc/permissions/com.dolby.daxservice.xml
-system_ext/etc/permissions/com.oneplus.software.xml
 
 # Dolby (vendor)
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
@@ -561,9 +565,6 @@ vendor/lib/soundfx/libswdap.so
 vendor/lib/soundfx/libswgamedap.so
 vendor/lib/libdapparamstorage.so
 vendor/lib/libdeccfg.so
-vendor/lib/libstagefright_soft_ac4dec.so
-vendor/lib/libstagefright_soft_ddpdec.so
-vendor/lib/libstagefrightdolby.so
 vendor/lib/vendor.dolby.hardware.dms@2.0.so
 vendor/lib64/soundfx/libeffectproxy.so
 vendor/lib64/soundfx/libhwdap.so
@@ -572,9 +573,6 @@ vendor/lib64/soundfx/libswgamedap.so
 vendor/lib64/libdapparamstorage.so
 vendor/lib64/libdeccfg.so
 vendor/lib64/libdlbdsservice.so
-vendor/lib64/libstagefright_soft_ac4dec.so
-vendor/lib64/libstagefright_soft_ddpdec.so
-vendor/lib64/libstagefrightdolby.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so
 

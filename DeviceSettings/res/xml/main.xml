@@ -71,24 +71,14 @@
         android:key="dolby"
         android:title="@string/dolby_category">
 
-        <org.havoc.device.DeviceSettings.Preference.SwitchPreference
-            android:key="enable_dolby_atmos"
-            android:summary="@string/enable_dolby_summary"
-            android:title="@string/enable_dolby_title"
-            android:icon="@drawable/ic_dolby"
-            android:defaultValue="false"
-            android:persistent="false" />
-
         <Preference
             android:key="audio_dolby_atmos"
-            android:icon="@drawable/ic_dolby_atmos"
+            android:icon="@drawable/ic_dolby"
             android:title="@string/dolby_title"
-            android:summary="@string/dolby_summary"
-            android:dependency="enable_dolby_atmos"
-            android:persistent="false">
+            android:summary="@string/dolby_summary">
             <intent
-                 android:targetPackage="com.oneplus.sound.tuner"
-                 android:targetClass="com.oneplus.sound.tuner.panoramic.DolbyPanoramicSoundActivity" />
+                 android:targetPackage="com.dolby.daxappui"
+                 android:targetClass="com.dolby.daxappui.MainActivity" />
         </Preference>
     </PreferenceCategory>
 

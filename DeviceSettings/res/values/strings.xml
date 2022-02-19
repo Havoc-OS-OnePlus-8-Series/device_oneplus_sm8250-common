@@ -44,9 +44,7 @@
 
     <!-- Dolby -->
     <string name="dolby_category">Dolby</string>
-    <string name="enable_dolby_title">Dolby Atmos</string>
-    <string name="enable_dolby_summary">Switching requires a reboot to take effect</string>
-    <string name="dolby_title">Configuration</string>
+    <string name="dolby_title">Dolby Atmos</string>
     <string name="dolby_summary">Configure the audio output based on media content</string>
 
     <!-- Doze -->

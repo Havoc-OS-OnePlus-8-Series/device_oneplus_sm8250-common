@@ -86,18 +86,6 @@
             </intent-filter>
         </service>
 
-        <!-- Dolby Tile Service -->
-        <service
-            android:name=".Services.DolbyTileService"
-            android:icon="@drawable/ic_dolby"
-            android:label="@string/enable_dolby_title"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-
         <!-- DozeSettings Activity -->
         <activity
             android:name=".Doze.DozeSettingsActivity"
