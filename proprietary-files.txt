@@ -422,7 +422,6 @@ vendor/lib64/vendor.qti.data.factory@2.2.so|2f56131f4b389f5e39774dd1ff67e6a6fcf9
 vendor/lib64/vendor.qti.data.factory@2.3.so|56eaf89dd4f519a3481511f4aade363f7b972efc
 vendor/lib64/vendor.qti.data.mwqem@1.0.so|3a391a097a0f209e97c649afeea3deb0dac1b243
 vendor/lib64/vendor.qti.data.slm@1.0.so|9fcde74b0484c28ce63f26f0e1be5ac874bbbbb3
-vendor/lib64/vendor.qti.hardware.cacert@1.0.so|f8f65b093fe367ffe0a8f23d7c7ff88ec09b80c5
 vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so|a3ae878fdd7660bf600535ffffe1fccabc974f4a
 vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so|0848be382ca968df54fc743fd7e0f0e39cc2f556
 vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so|94729e43c883f365e48d359bc2d7aa31690f057d
