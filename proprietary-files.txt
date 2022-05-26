@@ -93,8 +93,8 @@ vendor/lib/libadm.so|1954acdfa454e83054bb7d7656b8f276287f8a22
 vendor/lib/libaudcal.so|162fabfdfcdfc5647201574505a6eda6534e8874
 vendor/lib/libqtigef.so|3bae81a37cd0f344f41c2d542c348c6329b846fc
 
-# Audio firmware - from OnePlus9Oxygen_22.I.08_GLO_0080_2105011324
-vendor/firmware/tfa98xx.cnt|5578bfb86a4123af049c2885af7b30d3fd0a53e4
+# Audio firmware
+vendor/firmware/tfa98xx.cnt
 
 # Authsecret - from LA.UM.9.12.r1-11500-SMxx50.0
 vendor/bin/hw/android.hardware.authsecret@1.0-service-qti|f247c5a9c8257409428884e725f6634392889b0b
