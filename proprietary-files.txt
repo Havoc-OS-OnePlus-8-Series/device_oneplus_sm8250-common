@@ -1,16 +1,25 @@
 # All unpinned blobs below are extracted from OnePlus9ROxygen_13.I.09_OTA_0090_all_2202232018_eb4bb4430bdb8d9
 
-# ACDB - from OnePlus9ROxygen_13.I.05_GLO_0050_2107230024
-odm/etc/acdbdata/Bluetooth_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|f2ff674b9985d8b46283c311e56219e658166edc
-odm/etc/acdbdata/General_cal.acdb:vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|f43b517ef9de51ae3aaeb93753e3d4dc0039c506
-odm/etc/acdbdata/Global_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb|08924cc74e52117fcbccc7d1a2aff436508fe792
-odm/etc/acdbdata/Handset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb|b3e897d09cbd6481a7abade84353ef5c07b0610f
-odm/etc/acdbdata/Hdmi_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb|dd4826b5890b6bf54c391dea2482579387acd5d4
-odm/etc/acdbdata/Headset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb|0776cda6e70312c22966cd0b44e1679e7b2843dd
-odm/etc/acdbdata/Speaker_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|87eb51966ac9a8751065543c4f1ed5d63522db9c
-odm/etc/acdbdata/acdb_version:vendor/etc/acdbdata/MTP/acdb_version|06f5026ed955528bdd46751da20bf5e70ca2efa7
-vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp|9dc43de5d2b677401cdbc669588dea2ced93dcf0
-vendor/etc/acdbdata/adsp_avs_config.acdb|2dbe0eb155813d1b096c2efeee9b297bc5a63e15
+# ACDB (odm)
+odm/etc/acdbdata/Bluetooth_cal.acdb
+odm/etc/acdbdata/General_cal.acdb
+odm/etc/acdbdata/Global_cal.acdb
+odm/etc/acdbdata/Handset_cal.acdb
+odm/etc/acdbdata/Hdmi_cal.acdb
+odm/etc/acdbdata/Headset_cal.acdb
+odm/etc/acdbdata/Speaker_cal.acdb
+odm/etc/acdbdata/acdb_version
+
+# ACDB (vendor)
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
+vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # ADSP
 vendor/bin/adsprpcd
